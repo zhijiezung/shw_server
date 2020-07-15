@@ -17,6 +17,8 @@
         <maven-surefire-plugin.version>2.20.1</maven-surefire-plugin.version>
         <maven-source-plugin.version>3.0.1</maven-source-plugin.version>
         <maven-javadoc-plugin.version>3.0.0</maven-javadoc-plugin.version>
+
+        <skipTests>true</skipTests>
     </properties>
 
     <dependencies>

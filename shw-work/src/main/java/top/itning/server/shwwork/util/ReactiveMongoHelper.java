@@ -59,7 +59,8 @@ public class ReactiveMongoHelper {
         Pageable pageable;
         // need sort?
         if (direction != null) {
-            Sort sort = new Sort(direction, properties);
+//            Sort sort = new Sort(direction, properties);
+            Sort sort = Sort.by(direction, properties);
             pageable = PageRequest.of(page, size, sort);
         } else {
             pageable = PageRequest.of(page, size);
