@@ -1,0 +1,7 @@
+Windows重启docker服务
+打开Docker Quickstart Terminal，输入：docker-machine restart
+
+在Linux上的重启：service docker restart
+
+
+

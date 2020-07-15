@@ -1,0 +1,18 @@
+# 进入Dockerfile所在目录
+cd shw-eureka
+
+# 从Dockerfile创建镜像
+# 查阅：Docker build 命令    https://www.runoob.com/docker/docker-build-command.html
+docker build -t shw/eureka .
+
+# 查看镜像
+docker images
+
+# 运行镜像
+docker run -d -p 8761:8761 --name shw-eureka shw/eureka
+
+# 查看运行容器
+docker ps
+
+# 验证
+http://192.168.99.100:8761
