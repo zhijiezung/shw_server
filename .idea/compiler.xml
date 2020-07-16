@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="shw-gateway" />
+        <module name="shw-common" />
+        <module name="shw-hystrix-dashboard" />
+        <module name="shw-security" />
+        <module name="shw-group" />
+        <module name="shw-work" />
+        <module name="shw-eureka" />
+        <module name="shw-notice" />
+        <module name="shw-file" />
+        <module name="shw-upload" />
+        <module name="shw-studentgroup" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="shw-common" target="1.8" />
+      <module name="shw-eureka" target="1.8" />
+      <module name="shw-file" target="1.8" />
+      <module name="shw-gateway" target="1.8" />
+      <module name="shw-group" target="1.8" />
+      <module name="shw-hystrix-dashboard" target="1.8" />
+      <module name="shw-notice" target="1.8" />
+      <module name="shw-security" target="1.8" />
+      <module name="shw-studentgroup" target="1.8" />
+      <module name="shw-upload" target="1.8" />
+      <module name="shw-work" target="1.8" />
+      <module name="shw_server" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="shw-eureka" options="-parameters" />
+      <module name="shw-file" options="-parameters" />
+      <module name="shw-gateway" options="-parameters" />
+      <module name="shw-group" options="-parameters" />
+      <module name="shw-hystrix-dashboard" options="-parameters" />
+      <module name="shw-notice" options="-parameters" />
+      <module name="shw-security" options="-parameters" />
+      <module name="shw-studentgroup" options="-parameters" />
+      <module name="shw-upload" options="-parameters" />
+      <module name="shw-work" options="-parameters" />
+    </option>
+  </component>
+</project>

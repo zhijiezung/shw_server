@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/shw-common/shw-common.iml" filepath="$PROJECT_DIR$/shw-common/shw-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shw-eureka/shw-eureka.iml" filepath="$PROJECT_DIR$/shw-eureka/shw-eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shw-file/shw-file.iml" filepath="$PROJECT_DIR$/shw-file/shw-file.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shw-gateway/shw-gateway.iml" filepath="$PROJECT_DIR$/shw-gateway/shw-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shw-group/shw-group.iml" filepath="$PROJECT_DIR$/shw-group/shw-group.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shw-hystrix-dashboard/shw-hystrix-dashboard.iml" filepath="$PROJECT_DIR$/shw-hystrix-dashboard/shw-hystrix-dashboard.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shw-notice/shw-notice.iml" filepath="$PROJECT_DIR$/shw-notice/shw-notice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shw-security/shw-security.iml" filepath="$PROJECT_DIR$/shw-security/shw-security.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shw-studentgroup/shw-studentgroup.iml" filepath="$PROJECT_DIR$/shw-studentgroup/shw-studentgroup.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shw-upload/shw-upload.iml" filepath="$PROJECT_DIR$/shw-upload/shw-upload.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shw-work/shw-work.iml" filepath="$PROJECT_DIR$/shw-work/shw-work.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/shw_server.iml" filepath="$PROJECT_DIR$/.idea/shw_server.iml" />
+    </modules>
+  </component>
+</project>
