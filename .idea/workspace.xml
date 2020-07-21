@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aac05335-a89b-487e-b93b-0199fec97a3c" name="Default Changelist" comment="开始学习zuul">
+    <list default="true" id="aac05335-a89b-487e-b93b-0199fec97a3c" name="Default Changelist" comment="commit .idea/">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-gateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/shw-gateway/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -509,7 +511,9 @@
       <workItem from="1594714989787" duration="6256000" />
       <workItem from="1594774105646" duration="12905000" />
       <workItem from="1594801941680" duration="4131000" />
-      <workItem from="1594859401337" duration="223000" />
+      <workItem from="1594859401337" duration="5726000" />
+      <workItem from="1595292300039" duration="5347000" />
+      <workItem from="1595309921235" duration="2203000" />
     </task>
     <task id="LOCAL-00001" summary="docker 配置">
       <created>1594795026247</created>
@@ -525,7 +529,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594807657734</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="commit .idea/">
+      <created>1594859666353</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1594859666353</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -548,6 +559,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="docker 配置" />
     <MESSAGE value="开始学习zuul" />
-    <option name="LAST_COMMIT_MESSAGE" value="开始学习zuul" />
+    <MESSAGE value="commit .idea/" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit .idea/" />
   </component>
 </project>
