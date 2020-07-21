@@ -27,6 +27,8 @@
         <spring-boot-admin.version>2.2.1</spring-boot-admin.version>
         <dom4j.version>1.6.1</dom4j.version>
         <javax.interceptor-api.version>1.2.2</javax.interceptor-api.version>
+
+        <skipTests>true</skipTests>
     </properties>
 
     <dependencies>
@@ -193,13 +195,14 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
-            <plugin>
+
+            <!--<plugin>
                 <groupId>com.google.cloud.tools</groupId>
                 <artifactId>jib-maven-plugin</artifactId>
                 <version>${jib.maven.plugin.version}</version>
                 <configuration>
                     <from>
-                        <!--base image-->
+                        &lt;!&ndash;base image&ndash;&gt;
                         <image>rggb8uln.mirror.aliyuncs.com/library/openjdk:alpine</image>
                     </from>
                     <to>
@@ -228,7 +231,7 @@
                         </goals>
                     </execution>
                 </executions>
-            </plugin>
+            </plugin>-->
         </plugins>
     </build>
 
