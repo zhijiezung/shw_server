@@ -44,6 +44,7 @@ public class GroupRouters {
                 .andNest(
                         path("/internal"),
                         route()
+                                // http://localhost:8888/v2/group/internal/findOneGroupById/c3ac4579-7b48-40bf-9d31-f9a9122675c4
                                 .GET("/findOneGroupById/{id}", serverRequest -> ServerResponse.ok().body(groupService.findOneGroupById(serverRequest.pathVariable("id")), Group.class))
                                 .GET("/findByTeacherNumber/{id}", serverRequest -> ServerResponse.ok().body(groupService.findByTeacherNumber(serverRequest.pathVariable("id")), Group.class))
                                 .GET("/findGroupNameByGroupId/{id}", serverRequest -> ServerResponse.ok().body(groupService.findGroupNameByGroupId(serverRequest.pathVariable("id")), String.class))

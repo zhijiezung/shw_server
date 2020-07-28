@@ -4,10 +4,13 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import org.junit.Test;
 import top.itning.server.common.model.LoginUser;
 
-import static org.junit.Assert.*;
-
 public class JwtUtilsTest {
 
+    /**
+     * test JWT token 生成
+     *
+     * @throws JsonProcessingException
+     */
     @Test
     public void buildJwt() throws JsonProcessingException {
         LoginUser loginUser = new LoginUser();

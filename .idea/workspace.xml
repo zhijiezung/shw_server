@@ -2,38 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="21ae2cd2-8f0f-4b70-9197-5011a58b747e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/shw-eureka/src/main/resources/application-bat.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shw-file/src/main/resources/application-bat.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shw-gateway/src/main/resources/application-bat.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shw-group/src/main/resources/application-bat.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shw-hystrix-dashboard/src/main/resources/application-bat.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shw-notice/src/main/resources/application-bat.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shw-security/src/main/resources/application-bat.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shw-studentgroup/src/main/resources/application-bat.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shw-upload/src/main/resources/application-bat.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shw-work/src/main/resources/application-bat.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/shw.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shw-eureka/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shw-eureka/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shw-eureka/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/shw-eureka/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shw-file/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shw-file/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shw-file/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/shw-file/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shw-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shw-gateway/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shw-gateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/shw-gateway/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shw-group/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shw-group/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shw-group/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/shw-group/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shw-hystrix-dashboard/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shw-hystrix-dashboard/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shw-hystrix-dashboard/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/shw-hystrix-dashboard/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shw-notice/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shw-notice/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shw-notice/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/shw-notice/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shw-security/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shw-security/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shw-security/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/shw-security/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shw-studentgroup/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shw-studentgroup/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shw-studentgroup/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/shw-studentgroup/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shw-upload/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shw-upload/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shw-upload/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/shw-upload/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shw-work/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shw-work/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shw-work/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/shw-work/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-gateway/src/main/java/top/itning/server/shwgateway/util/JwtUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-gateway/src/main/java/top/itning/server/shwgateway/util/JwtUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-gateway/src/test/java/top/itning/server/shwgateway/util/JwtUtilsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-gateway/src/test/java/top/itning/server/shwgateway/util/JwtUtilsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-group/src/main/java/top/itning/server/shwgroup/router/GroupRouters.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-group/src/main/java/top/itning/server/shwgroup/router/GroupRouters.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -129,7 +102,23 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ShwEurekaApplication">
+  <component name="RunManager" selected="JUnit.JwtUtilsTest.buildJwt">
+    <configuration name="JwtUtilsTest.buildJwt" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="shw-gateway" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="top.itning.server.shwgateway.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="top.itning.server.shwgateway.util" />
+      <option name="MAIN_CLASS_NAME" value="top.itning.server.shwgateway.util.JwtUtilsTest" />
+      <option name="METHOD_NAME" value="buildJwt" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="common" type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -497,7 +486,13 @@
       <item itemvalue="Spring Boot.ShwEurekaApplication" />
       <item itemvalue="Spring Boot.ShwGatewayApplication" />
       <item itemvalue="Spring Boot.ShwGroupApplication" />
+      <item itemvalue="JUnit.JwtUtilsTest.buildJwt" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.JwtUtilsTest.buildJwt" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="allServicesViewState">
@@ -546,7 +541,7 @@
       <workItem from="1595379357414" duration="94000" />
       <workItem from="1595585812926" duration="1483000" />
       <workItem from="1595809190165" duration="7825000" />
-      <workItem from="1595896325344" duration="16521000" />
+      <workItem from="1595896325344" duration="19383000" />
     </task>
     <task id="LOCAL-00001" summary="docker 配置">
       <created>1594795026247</created>
@@ -576,7 +571,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595897946610</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="yml profile 配置">
+      <created>1595924989390</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1595924989390</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -603,6 +605,33 @@
     <MESSAGE value="开始学习zuul" />
     <MESSAGE value="commit .idea/" />
     <MESSAGE value="mark" />
-    <option name="LAST_COMMIT_MESSAGE" value="mark" />
+    <MESSAGE value="yml profile 配置" />
+    <option name="LAST_COMMIT_MESSAGE" value="yml profile 配置" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/shw-group/src/main/java/top/itning/server/shwgroup/handler/GroupHandler.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/shw-group/src/main/java/top/itning/server/shwgroup/handler/GroupHandler.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/shw-group/src/main/java/top/itning/server/shwgroup/handler/GroupHandler.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/shw-group/src/main/java/top/itning/server/shwgroup/handler/GroupHandler.java</url>
+          <line>62</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
