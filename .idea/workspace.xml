@@ -2,10 +2,38 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="21ae2cd2-8f0f-4b70-9197-5011a58b747e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/shw-eureka/src/main/resources/application-bat.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shw-file/src/main/resources/application-bat.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shw-gateway/src/main/resources/application-bat.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shw-group/src/main/resources/application-bat.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shw-hystrix-dashboard/src/main/resources/application-bat.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shw-notice/src/main/resources/application-bat.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shw-security/src/main/resources/application-bat.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shw-studentgroup/src/main/resources/application-bat.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shw-upload/src/main/resources/application-bat.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shw-work/src/main/resources/application-bat.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shw-file/src/main/java/top/itning/server/shwfile/service/impl/FileServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-file/src/main/java/top/itning/server/shwfile/service/impl/FileServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-eureka/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shw-eureka/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-eureka/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/shw-eureka/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-file/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shw-file/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-file/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/shw-file/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shw-gateway/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shw-gateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/shw-gateway/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shw-group/src/main/java/top/itning/server/shwgroup/router/GroupRouters.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-group/src/main/java/top/itning/server/shwgroup/router/GroupRouters.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-group/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shw-group/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-group/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/shw-group/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-hystrix-dashboard/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shw-hystrix-dashboard/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-hystrix-dashboard/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/shw-hystrix-dashboard/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-notice/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shw-notice/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-notice/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/shw-notice/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-security/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shw-security/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-security/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/shw-security/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-studentgroup/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shw-studentgroup/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-studentgroup/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/shw-studentgroup/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-upload/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shw-upload/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-upload/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/shw-upload/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-work/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shw-work/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-work/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/shw-work/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -68,7 +96,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/shw-studentgroup" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/shw-eureka/src/main/resources" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -77,11 +105,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\demo\shw_server\shw-studentgroup" />
-      <recent name="E:\demo\shw_server\shw-group" />
-      <recent name="E:\demo\shw_server\shw-notice" />
-      <recent name="E:\demo\shw_server\shw-work" />
-      <recent name="E:\demo\shw_server\shw-upload" />
+      <recent name="E:\demo\shw_server\shw-eureka\src\main\resources" />
+      <recent name="E:\demo\shw_server\shw-file\src\main\resources" />
+      <recent name="E:\demo\shw_server\shw-gateway\src\main\resources" />
+      <recent name="E:\demo\shw_server\shw-group\src\main\resources" />
+      <recent name="E:\demo\shw_server\shw-hystrix-dashboard\src\main\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -101,7 +129,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Maven.eureka">
+  <component name="RunManager" selected="Spring Boot.ShwEurekaApplication">
     <configuration name="common" type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -474,9 +502,19 @@
   <component name="ServiceViewManager">
     <option name="allServicesViewState">
       <serviceView>
-        <option name="contentProportion" value="0.1482684" />
+        <option name="contentProportion" value="0.17965367" />
         <treeState>
-          <expand />
+          <expand>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@5195b9ca" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+            </path>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@5195b9ca" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@f8ab4e78" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+            </path>
+          </expand>
           <select />
         </treeState>
       </serviceView>
@@ -508,7 +546,7 @@
       <workItem from="1595379357414" duration="94000" />
       <workItem from="1595585812926" duration="1483000" />
       <workItem from="1595809190165" duration="7825000" />
-      <workItem from="1595896325344" duration="1553000" />
+      <workItem from="1595896325344" duration="16521000" />
     </task>
     <task id="LOCAL-00001" summary="docker 配置">
       <created>1594795026247</created>
@@ -531,7 +569,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594859666353</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="mark">
+      <created>1595897946610</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1595897946610</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -551,10 +596,13 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="docker 配置" />
     <MESSAGE value="开始学习zuul" />
     <MESSAGE value="commit .idea/" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit .idea/" />
+    <MESSAGE value="mark" />
+    <option name="LAST_COMMIT_MESSAGE" value="mark" />
   </component>
 </project>
