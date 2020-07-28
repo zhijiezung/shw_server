@@ -80,7 +80,8 @@ public class FileServiceImpl implements FileService {
 
     @Override
     public void downFile(String studentNumber, String workId, String range, HttpServletResponse response) {
-        Upload upload = uploadClient.findOneById(studentNumber + "|" + workId).orElseThrow(() -> new NoSuchFiledValueException("上传信息不存在", HttpStatus.NOT_FOUND));
+        Upload upload = uploadClient.findOneById(studentNumber + "|" + workId)
+                .orElseThrow(() -> new NoSuchFiledValueException("上传信息不存在", HttpStatus.NOT_FOUND));
         Student student = securityClient.findStudentById(studentNumber).orElseGet(() -> {
             Student s = new Student();
             s.setName("未知学生姓名");

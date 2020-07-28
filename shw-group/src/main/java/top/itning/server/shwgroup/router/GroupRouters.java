@@ -40,7 +40,7 @@ public class GroupRouters {
                         .DELETE("/{id}", groupHandler::deleteGroup)
                         .PATCH("/{id}/{name}", groupHandler::updateGroupName)
                         .build()
-        )
+                )
                 .andNest(
                         path("/internal"),
                         route()
@@ -49,6 +49,6 @@ public class GroupRouters {
                                 .GET("/findGroupNameByGroupId/{id}", serverRequest -> ServerResponse.ok().body(groupService.findGroupNameByGroupId(serverRequest.pathVariable("id")), String.class))
                                 .GET("/findTeacherNameById/{id}", serverRequest -> ServerResponse.ok().body(groupService.findTeacherNameById(serverRequest.pathVariable("id")), String.class))
                                 .build()
-                );
+        );
     }
 }

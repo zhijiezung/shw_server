@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aac05335-a89b-487e-b93b-0199fec97a3c" name="Default Changelist" comment="commit .idea/">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="21ae2cd2-8f0f-4b70-9197-5011a58b747e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-file/src/main/java/top/itning/server/shwfile/service/impl/FileServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-file/src/main/java/top/itning/server/shwfile/service/impl/FileServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shw-gateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/shw-gateway/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-group/src/main/java/top/itning/server/shwgroup/router/GroupRouters.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-group/src/main/java/top/itning/server/shwgroup/router/GroupRouters.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,6 +34,11 @@
     <select />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
@@ -470,22 +476,7 @@
       <serviceView>
         <option name="contentProportion" value="0.1482684" />
         <treeState>
-          <expand>
-            <path>
-              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@79164f0c" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-            </path>
-            <path>
-              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@79164f0c" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@ba334af9" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-            </path>
-            <path>
-              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@79164f0c" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@f8adb91c" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-            </path>
-          </expand>
+          <expand />
           <select />
         </treeState>
       </serviceView>
@@ -496,7 +487,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="aac05335-a89b-487e-b93b-0199fec97a3c" name="Default Changelist" comment="" />
+      <changelist id="21ae2cd2-8f0f-4b70-9197-5011a58b747e" name="Default Changelist" comment="" />
       <created>1594110634758</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -514,6 +505,10 @@
       <workItem from="1594859401337" duration="5726000" />
       <workItem from="1595292300039" duration="5347000" />
       <workItem from="1595309921235" duration="2203000" />
+      <workItem from="1595379357414" duration="94000" />
+      <workItem from="1595585812926" duration="1483000" />
+      <workItem from="1595809190165" duration="7825000" />
+      <workItem from="1595896325344" duration="1553000" />
     </task>
     <task id="LOCAL-00001" summary="docker 配置">
       <created>1594795026247</created>
