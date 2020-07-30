@@ -63,7 +63,7 @@ public class LoginHandler {
         Optional<String> ticketOptional = request.queryParam("ticket");
         if (ticketOptional.isPresent()) {
             String ticket = ticketOptional.get();
-            logger.debug("get ticket {}", ticket);
+            logger.debug("get ticket: {}", ticket);
             try {
                 return doLoginWithTicket(ticket);
             } catch (Exception e) {

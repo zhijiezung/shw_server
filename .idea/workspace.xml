@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="21ae2cd2-8f0f-4b70-9197-5011a58b747e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/db/shw.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/zipkin.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shw-gateway/src/main/java/top/itning/server/shwgateway/util/JwtUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-gateway/src/main/java/top/itning/server/shwgateway/util/JwtUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shw-gateway/src/test/java/top/itning/server/shwgateway/util/JwtUtilsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-gateway/src/test/java/top/itning/server/shwgateway/util/JwtUtilsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shw-group/src/main/java/top/itning/server/shwgroup/router/GroupRouters.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-group/src/main/java/top/itning/server/shwgroup/router/GroupRouters.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-security/src/main/java/top/itning/server/shwsecurity/handler/LoginHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-security/src/main/java/top/itning/server/shwsecurity/handler/LoginHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-security/src/main/resources/application-bat.properties" beforeDir="false" afterPath="$PROJECT_DIR$/shw-security/src/main/resources/application-bat.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-security/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/shw-security/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -69,7 +70,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/shw-eureka/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/docs" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -78,11 +79,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\demo\shw_server\docs" />
       <recent name="E:\demo\shw_server\shw-eureka\src\main\resources" />
       <recent name="E:\demo\shw_server\shw-file\src\main\resources" />
       <recent name="E:\demo\shw_server\shw-gateway\src\main\resources" />
       <recent name="E:\demo\shw_server\shw-group\src\main\resources" />
-      <recent name="E:\demo\shw_server\shw-hystrix-dashboard\src\main\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -465,6 +466,7 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.JwtUtilsTest.buildJwt" />
       <item itemvalue="Maven.common" />
       <item itemvalue="Maven.eureka" />
       <item itemvalue="Maven.file" />
@@ -486,7 +488,6 @@
       <item itemvalue="Spring Boot.ShwEurekaApplication" />
       <item itemvalue="Spring Boot.ShwGatewayApplication" />
       <item itemvalue="Spring Boot.ShwGroupApplication" />
-      <item itemvalue="JUnit.JwtUtilsTest.buildJwt" />
     </list>
     <recent_temporary>
       <list>
@@ -502,12 +503,12 @@
           <expand>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@5195b9ca" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@88f2914b" type="7427dc5b:ServiceModel$ServiceGroupNode" />
             </path>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@5195b9ca" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@f8ab4e78" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@88f2914b" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@6ce22387" type="7427dc5b:ServiceModel$ServiceGroupNode" />
             </path>
           </expand>
           <select />
@@ -541,7 +542,9 @@
       <workItem from="1595379357414" duration="94000" />
       <workItem from="1595585812926" duration="1483000" />
       <workItem from="1595809190165" duration="7825000" />
-      <workItem from="1595896325344" duration="19383000" />
+      <workItem from="1595896325344" duration="21696000" />
+      <workItem from="1595984341552" duration="5539000" />
+      <workItem from="1596069012198" duration="11687000" />
     </task>
     <task id="LOCAL-00001" summary="docker 配置">
       <created>1594795026247</created>
@@ -578,7 +581,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595924989390</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="测试：group 接口路由成功">
+      <created>1595933537344</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1595933537344</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -606,30 +616,66 @@
     <MESSAGE value="commit .idea/" />
     <MESSAGE value="mark" />
     <MESSAGE value="yml profile 配置" />
-    <option name="LAST_COMMIT_MESSAGE" value="yml profile 配置" />
+    <MESSAGE value="测试：group 接口路由成功" />
+    <option name="LAST_COMMIT_MESSAGE" value="测试：group 接口路由成功" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/shw-group/src/main/java/top/itning/server/shwgroup/handler/GroupHandler.java</url>
-          <line>35</line>
-          <option name="timeStamp" value="3" />
+          <url>file://$PROJECT_DIR$/shw-security/src/main/java/top/itning/server/shwsecurity/handler/LoginHandler.java</url>
+          <line>128</line>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/shw-group/src/main/java/top/itning/server/shwgroup/handler/GroupHandler.java</url>
-          <line>44</line>
-          <option name="timeStamp" value="4" />
+          <url>file://$PROJECT_DIR$/shw-security/src/main/java/top/itning/server/shwsecurity/handler/LoginHandler.java</url>
+          <line>146</line>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/shw-group/src/main/java/top/itning/server/shwgroup/handler/GroupHandler.java</url>
-          <line>50</line>
-          <option name="timeStamp" value="5" />
+          <url>file://$PROJECT_DIR$/shw-security/src/main/java/top/itning/server/shwsecurity/handler/LoginHandler.java</url>
+          <line>196</line>
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/shw-group/src/main/java/top/itning/server/shwgroup/handler/GroupHandler.java</url>
+          <url>file://$PROJECT_DIR$/shw-security/src/main/java/top/itning/server/shwsecurity/handler/LoginHandler.java</url>
+          <line>185</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/shw-security/src/main/java/top/itning/server/shwsecurity/handler/LoginHandler.java</url>
+          <line>171</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/shw-security/src/main/java/top/itning/server/shwsecurity/handler/LoginHandler.java</url>
+          <line>175</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/shw-security/src/main/java/top/itning/server/shwsecurity/handler/LoginHandler.java</url>
+          <line>84</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/shw-security/src/main/java/top/itning/server/shwsecurity/handler/LoginHandler.java</url>
           <line>62</line>
-          <option name="timeStamp" value="6" />
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/shw-security/src/main/java/top/itning/server/shwsecurity/handler/LoginHandler.java</url>
+          <line>57</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/shw-security/src/main/java/top/itning/server/shwsecurity/handler/LoginHandler.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/shw-security/src/main/java/top/itning/server/shwsecurity/handler/LoginHandler.java</url>
+          <line>45</line>
+          <option name="timeStamp" value="18" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
