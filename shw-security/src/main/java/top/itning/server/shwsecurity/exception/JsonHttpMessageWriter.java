@@ -38,8 +38,7 @@ public class JsonHttpMessageWriter implements HttpMessageWriter<Map<String, Obje
                             @NonNull ResolvableType elementType,
                             MediaType mediaType,
                             @NonNull ReactiveHttpOutputMessage message,
-                            @NonNull Map<String, Object> hints)
-    {
+                            @NonNull Map<String, Object> hints) {
         return Mono.from(inputStream).flatMap(is -> message.writeWith(Mono.just(message.bufferFactory().wrap(transform2Json(is).getBytes()))));
     }
 

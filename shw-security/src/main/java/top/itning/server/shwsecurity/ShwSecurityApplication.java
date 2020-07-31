@@ -5,7 +5,7 @@ import org.springframework.cloud.client.SpringCloudApplication;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 
 /**
- *
+ * 安全中心
  */
 @SpringCloudApplication
 @EnableFeignClients

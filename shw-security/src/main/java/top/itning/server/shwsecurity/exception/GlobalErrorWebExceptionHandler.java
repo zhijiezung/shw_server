@@ -17,7 +17,6 @@ import java.util.Map;
 /**
  * 全局错误异常处理器
  *
- *
  * @date 2019/4/29 18:13
  */
 @Component
@@ -27,8 +26,7 @@ public class GlobalErrorWebExceptionHandler extends AbstractErrorWebExceptionHan
     public GlobalErrorWebExceptionHandler(JsonHttpMessageWriter jsonHttpMessageWriter,
                                           ErrorAttributes errorAttributes,
                                           ResourceProperties resourceProperties,
-                                          ApplicationContext applicationContext)
-    {
+                                          ApplicationContext applicationContext) {
         super(errorAttributes, resourceProperties, applicationContext);
         setMessageWriters(Collections.singletonList(jsonHttpMessageWriter));
     }

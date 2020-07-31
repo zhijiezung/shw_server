@@ -2,19 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="21ae2cd2-8f0f-4b70-9197-5011a58b747e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/shw-gateway/src/main/java/top/itning/server/shwgateway/client/FeignConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shw-gateway/src/main/java/top/itning/server/shwgateway/client/SecurityClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shw-gateway/src/main/java/top/itning/server/shwgateway/filter/AuthorizationHeaderFilter2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shw-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shw-gateway/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shw-gateway/src/main/java/top/itning/server/shwgateway/ShwGatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-gateway/src/main/java/top/itning/server/shwgateway/ShwGatewayApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shw-gateway/src/main/java/top/itning/server/shwgateway/filter/AuthorizationHeaderFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-gateway/src/main/java/top/itning/server/shwgateway/filter/AuthorizationHeaderFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shw-gateway/src/main/java/top/itning/server/shwgateway/filter/ErrorFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-gateway/src/main/java/top/itning/server/shwgateway/filter/ErrorFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shw-gateway/src/main/java/top/itning/server/shwgateway/util/JwtUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-gateway/src/main/java/top/itning/server/shwgateway/util/JwtUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shw-security/src/main/java/top/itning/server/shwsecurity/exception/GlobalErrorAttributes.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-security/src/main/java/top/itning/server/shwsecurity/exception/GlobalErrorAttributes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-security/src/main/java/top/itning/server/shwsecurity/ShwSecurityApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-security/src/main/java/top/itning/server/shwsecurity/ShwSecurityApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-security/src/main/java/top/itning/server/shwsecurity/config/BeansConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-security/src/main/java/top/itning/server/shwsecurity/config/BeansConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-security/src/main/java/top/itning/server/shwsecurity/config/CasProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-security/src/main/java/top/itning/server/shwsecurity/config/CasProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-security/src/main/java/top/itning/server/shwsecurity/entity/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-security/src/main/java/top/itning/server/shwsecurity/entity/Student.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shw-security/src/main/java/top/itning/server/shwsecurity/exception/GlobalErrorWebExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-security/src/main/java/top/itning/server/shwsecurity/exception/GlobalErrorWebExceptionHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shw-security/src/main/java/top/itning/server/shwsecurity/exception/JsonHttpMessageWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-security/src/main/java/top/itning/server/shwsecurity/exception/JsonHttpMessageWriter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shw-security/src/main/java/top/itning/server/shwsecurity/handler/LoginHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-security/src/main/java/top/itning/server/shwsecurity/handler/LoginHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-security/src/main/java/top/itning/server/shwsecurity/repository/StudentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-security/src/main/java/top/itning/server/shwsecurity/repository/StudentRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shw-security/src/main/java/top/itning/server/shwsecurity/router/LoginRouters.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-security/src/main/java/top/itning/server/shwsecurity/router/LoginRouters.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shw-security/src/main/java/top/itning/server/shwsecurity/util/JwtUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-security/src/main/java/top/itning/server/shwsecurity/util/JwtUtils.java" afterDir="false" />
     </list>
@@ -556,7 +551,7 @@
       <workItem from="1595809190165" duration="7825000" />
       <workItem from="1595896325344" duration="21696000" />
       <workItem from="1595984341552" duration="5539000" />
-      <workItem from="1596069012198" duration="31648000" />
+      <workItem from="1596069012198" duration="32003000" />
     </task>
     <task id="LOCAL-00001" summary="docker 配置">
       <created>1594795026247</created>
@@ -614,7 +609,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596158531047</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="zuul -&gt; 安全中心 -&gt; 验证jwt">
+      <created>1596181435510</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1596181435510</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -645,6 +647,7 @@
     <MESSAGE value="测试：group 接口路由成功" />
     <MESSAGE value="测试：security" />
     <MESSAGE value="Remove author information." />
-    <option name="LAST_COMMIT_MESSAGE" value="Remove author information." />
+    <MESSAGE value="zuul -&gt; 安全中心 -&gt; 验证jwt" />
+    <option name="LAST_COMMIT_MESSAGE" value="zuul -&gt; 安全中心 -&gt; 验证jwt" />
   </component>
 </project>

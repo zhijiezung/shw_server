@@ -8,7 +8,6 @@ import java.net.URI;
 /**
  * CAS属性配置
  *
- *
  * @date 2019/4/30 13:28
  */
 @ConfigurationProperties(prefix = "cas")
