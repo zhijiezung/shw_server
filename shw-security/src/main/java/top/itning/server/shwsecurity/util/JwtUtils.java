@@ -55,7 +55,7 @@ public final class JwtUtils {
      * @return
      */
     public static LoginUser getLoginUser(String jwt) {
-        if (DEFAULT_STR.equals(jwt)) {
+        if (null == jwt || DEFAULT_STR.equals(jwt)) {
             throw new CasException("请先登陆", HttpStatus.UNAUTHORIZED);
         }
         try {

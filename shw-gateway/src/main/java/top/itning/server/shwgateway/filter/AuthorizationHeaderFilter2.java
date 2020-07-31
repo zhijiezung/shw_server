@@ -3,13 +3,17 @@ package top.itning.server.shwgateway.filter;
 import com.netflix.zuul.ZuulFilter;
 import com.netflix.zuul.context.RequestContext;
 import com.netflix.zuul.exception.ZuulException;
-import org.apache.commons.lang.StringUtils;
+import feign.FeignException;
+import io.micrometer.core.instrument.util.StringUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
-import top.itning.server.common.exception.CasException;
+import org.springframework.stereotype.Component;
 import top.itning.server.common.model.LoginUser;
-import top.itning.server.shwgateway.util.JwtUtils;
+import top.itning.server.shwgateway.client.SecurityClient;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -28,10 +32,15 @@ import static org.springframework.cloud.netflix.zuul.filters.support.FilterConst
  * 该过滤器检查请求是否包含{@link HttpHeaders#AUTHORIZATION}请求头，并将
  * 其转换为用户信息，如果转换失败将返回错误视图
  *
- * @date 2019/4/29 22:48
+ * @date 2020/07/31 09:25
  */
-//@Component
-public class AuthorizationHeaderFilter extends ZuulFilter {
+@Component
+public class AuthorizationHeaderFilter2 extends ZuulFilter {
+    private final Logger logger = LoggerFactory.getLogger(getClass());
+
+    @Autowired
+    private SecurityClient securityClient;
+
     /**
      * 忽略过滤路径
      */
@@ -66,8 +75,9 @@ public class AuthorizationHeaderFilter extends ZuulFilter {
     public Object run() throws ZuulException {
         RequestContext requestContext = RequestContext.getCurrentContext();
         HttpServletRequest request = requestContext.getRequest();
-        String authorizationHeader = request.getHeader(HttpHeaders.AUTHORIZATION);
-        if (StringUtils.isBlank(authorizationHeader)) {
+        String ah = request.getHeader(HttpHeaders.AUTHORIZATION);
+
+        if ("null".equalsIgnoreCase(ah) || StringUtils.isBlank(ah)) {
             requestContext.setSendZuulResponse(false);
             requestContext.setResponseStatusCode(HttpStatus.UNAUTHORIZED.value());
             HttpServletResponse response = requestContext.getResponse();
@@ -77,11 +87,11 @@ public class AuthorizationHeaderFilter extends ZuulFilter {
                 writer.flush();
                 requestContext.setResponse(response);
             } catch (IOException e) {
-                throw new ZuulException(e.getMessage(), 500, "");
+                throw new ZuulException("请先登陆", 401, "请先登陆");
             }
         } else {
             try {
-                LoginUser loginUser = JwtUtils.getLoginUser(authorizationHeader);
+                LoginUser loginUser = securityClient.getLoginUser().orElse(null);
                 Map<String, List<String>> qp = new HashMap<>(6);
                 qp.put("id", Collections.singletonList(loginUser.getId()));
                 qp.put("no", Collections.singletonList(loginUser.getNo()));
@@ -90,26 +100,28 @@ public class AuthorizationHeaderFilter extends ZuulFilter {
                 qp.put("name", Collections.singletonList(loginUser.getName()));
                 qp.put("loginIp", Collections.singletonList(loginUser.getLoginIp()));
                 requestContext.setRequestQueryParams(qp);
-            } catch (CasException e) {
+                logger.debug("已登录用户信息：{}", loginUser);
+            } catch (FeignException e) {
                 requestContext.setSendZuulResponse(false);
-                requestContext.setResponseStatusCode(e.getCode().value());
+                requestContext.setResponseStatusCode(e.status());
                 HttpServletResponse response = requestContext.getResponse();
                 response.setContentType(MediaType.APPLICATION_JSON_UTF8_VALUE);
                 try (PrintWriter writer = response.getWriter()) {
                     writer.write("{" +
                             "\"code\":" +
-                            e.getCode().value() +
+                            e.status() +
                             "," +
                             "\"msg\":\"" +
-                            e.getMsg() +
+                            e.getMessage() +
                             "\",\"data\":\"\"}");
                     writer.flush();
                     requestContext.setResponse(response);
                 } catch (IOException ex) {
-                    throw new ZuulException(e.getMessage(), 500, "");
+                    throw new ZuulException(e.getMessage(), e.status(), e.getMessage());
                 }
             }
         }
+
         return null;
     }
 }

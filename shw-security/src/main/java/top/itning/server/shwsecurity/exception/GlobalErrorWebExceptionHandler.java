@@ -23,10 +23,12 @@ import java.util.Map;
 @Component
 @Order(-2)
 public class GlobalErrorWebExceptionHandler extends AbstractErrorWebExceptionHandler {
+
     public GlobalErrorWebExceptionHandler(JsonHttpMessageWriter jsonHttpMessageWriter,
                                           ErrorAttributes errorAttributes,
                                           ResourceProperties resourceProperties,
-                                          ApplicationContext applicationContext) {
+                                          ApplicationContext applicationContext)
+    {
         super(errorAttributes, resourceProperties, applicationContext);
         setMessageWriters(Collections.singletonList(jsonHttpMessageWriter));
     }
@@ -37,8 +39,8 @@ public class GlobalErrorWebExceptionHandler extends AbstractErrorWebExceptionHan
                 RequestPredicates.all(), this::renderErrorResponse);
     }
 
-    private Mono<ServerResponse> renderErrorResponse(
-            ServerRequest request) {
+    private Mono<ServerResponse> renderErrorResponse(ServerRequest request) {
+        /** {@link GlobalErrorAttributes#getErrorAttributes(ServerRequest, boolean)} */
         Map<String, Object> errorPropertiesMap = getErrorAttributes(request, false);
         return ServerResponse
                 .status(Integer.valueOf(errorPropertiesMap.getOrDefault("code", 500).toString()))

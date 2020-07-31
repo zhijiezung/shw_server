@@ -17,7 +17,6 @@ import java.util.Map;
  * JSON格式消息写入器
  * 该类解析MAP将其转换为JSON
  *
- *
  * @date 2019/4/29 19:07
  */
 @Component
@@ -39,8 +38,9 @@ public class JsonHttpMessageWriter implements HttpMessageWriter<Map<String, Obje
                             @NonNull ResolvableType elementType,
                             MediaType mediaType,
                             @NonNull ReactiveHttpOutputMessage message,
-                            @NonNull Map<String, Object> hints) {
-        return Mono.from(inputStream).flatMap(m -> message.writeWith(Mono.just(message.bufferFactory().wrap(transform2Json(m).getBytes()))));
+                            @NonNull Map<String, Object> hints)
+    {
+        return Mono.from(inputStream).flatMap(is -> message.writeWith(Mono.just(message.bufferFactory().wrap(transform2Json(is).getBytes()))));
     }
 
     private String transform2Json(Map<String, Object> sourceMap) {

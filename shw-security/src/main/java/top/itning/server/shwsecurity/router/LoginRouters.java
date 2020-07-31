@@ -21,6 +21,7 @@ import static org.springframework.web.reactive.function.server.RouterFunctions.r
  */
 @Configuration
 public class LoginRouters {
+
     private final StudentRepository studentRepository;
 
     public LoginRouters(StudentRepository studentRepository) {
@@ -40,6 +41,7 @@ public class LoginRouters {
                         path("/internal"),
                         route()
                                 .GET("/findStudentById/{id}", serverRequest -> ServerResponse.ok().body(studentRepository.findById(serverRequest.pathVariable("id")), Student.class))
+                                .GET("/getLoginUser", loginHandler::getLoginUser)
                                 .build()
                 );
     }
