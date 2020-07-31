@@ -8,7 +8,7 @@ import java.io.Serializable;
 /**
  * 作业详情DTO
  *
- * @author itning
+ *
  */
 public class WorkDetailsDTO implements Serializable {
     /**

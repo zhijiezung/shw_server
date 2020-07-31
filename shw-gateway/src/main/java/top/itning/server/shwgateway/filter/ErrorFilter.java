@@ -16,7 +16,7 @@ import static org.springframework.cloud.netflix.zuul.filters.support.FilterConst
 /**
  * 错误信息过滤
  *
- * @author itning
+ *
  * @date 2019/4/30 2:53
  */
 @Component

@@ -13,8 +13,6 @@ import java.util.Date;
 
 /**
  * Jwt 工具类
- *
- * @author itning
  */
 public final class JwtUtils {
     private static final Logger LOGGER = LoggerFactory.getLogger(JwtUtils.class);

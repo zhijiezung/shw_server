@@ -29,7 +29,6 @@ import java.util.*;
 /**
  * 登陆处理器
  *
- * @author itning
  * @date 2019/4/30 12:02
  */
 @Component

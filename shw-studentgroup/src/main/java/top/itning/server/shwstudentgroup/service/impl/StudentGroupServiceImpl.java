@@ -30,7 +30,7 @@ import java.util.stream.Collectors;
 /**
  * 学生群组服务实现
  *
- * @author itning
+ *
  * @date 2019/4/30 18:16
  */
 @Service

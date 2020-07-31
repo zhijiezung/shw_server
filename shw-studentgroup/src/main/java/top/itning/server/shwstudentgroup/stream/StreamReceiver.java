@@ -9,7 +9,7 @@ import top.itning.server.shwstudentgroup.service.StudentGroupService;
 /**
  * 消息接收
  *
- * @author itning
+ *
  */
 @Component
 @EnableBinding({DelGroupMessage.class, StudentGroupMessage.class})

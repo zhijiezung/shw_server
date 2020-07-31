@@ -5,7 +5,7 @@ import java.io.Serializable;
 /**
  * 登陆用户
  *
- * @author itning
+ *
  */
 public class LoginUser implements Serializable {
     /**

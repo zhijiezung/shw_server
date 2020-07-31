@@ -10,7 +10,7 @@ import top.itning.server.shwwork.entity.Work;
 /**
  * 作业服务
  *
- * @author itning
+ *
  * @date 2019/5/1 9:43
  */
 public interface WorkService {

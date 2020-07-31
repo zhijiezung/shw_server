@@ -9,7 +9,7 @@ import top.itning.server.common.model.LoginUser;
 /**
  * 前置条件
  *
- * @author itning
+ *
  * @date 2019/4/30 10:36
  */
 public class Preconditions {

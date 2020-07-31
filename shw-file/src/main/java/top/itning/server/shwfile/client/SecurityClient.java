@@ -11,7 +11,7 @@ import java.util.Optional;
 /**
  * Security服务远程接口
  *
- * @author itning
+ *
  * @date 2019/5/5 19:33
  */
 @FeignClient(name = "security")

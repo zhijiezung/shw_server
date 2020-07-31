@@ -24,7 +24,7 @@ import java.util.Map;
 /**
  * 群组服务实现
  *
- * @author itning
+ *
  * @date 2019/4/29 12:34
  */
 @Service

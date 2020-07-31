@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Configuration;
 /**
  * Beans Config
  *
- * @author itning
+ *
  */
 @Configuration
 public class BeansConfig {

@@ -19,7 +19,7 @@ import java.security.MessageDigest;
 /**
  * 文件工具类
  *
- * @author itning
+ *
  */
 public final class FileUtils {
     private static final Logger logger = LoggerFactory.getLogger(FileUtils.class);

@@ -11,7 +11,7 @@ import java.util.List;
 /**
  * 学生群组服务
  *
- * @author itning
+ *
  * @date 2019/4/30 18:14
  */
 public interface StudentGroupService {

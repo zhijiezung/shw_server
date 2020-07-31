@@ -10,7 +10,7 @@ import java.io.Serializable;
 /**
  * Rest 返回消息
  *
- * @author itning
+ *
  */
 public class RestModel<T> implements Serializable {
     /**

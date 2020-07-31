@@ -23,7 +23,7 @@ import java.util.Map;
 /**
  * This Component Will Help You Pagination
  *
- * @author itning
+ *
  * @date 2019/4/30 15:47
  */
 @Component

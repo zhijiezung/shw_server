@@ -9,7 +9,7 @@ import org.springframework.web.client.RestTemplate;
 /**
  * Beans Config
  *
- * @author itning
+ *
  * @date 2019/4/30 12:23
  */
 @Configuration

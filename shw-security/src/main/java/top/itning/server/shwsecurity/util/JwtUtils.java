@@ -3,6 +3,8 @@ package top.itning.server.shwsecurity.util;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.jsonwebtoken.*;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
 import top.itning.server.common.exception.CasException;
 import top.itning.server.common.model.LoginUser;
@@ -12,9 +14,11 @@ import java.util.Date;
 /**
  * Jwt 工具类
  *
- * @author itning
+ *
  */
 public final class JwtUtils {
+    private static final Logger LOGGER = LoggerFactory.getLogger(JwtUtils.class);
+
     private static final String PRIVATE_KEY = "hxcshw";
     private static final String LOGIN_USER = "loginUser";
     private static final String DEFAULT_STR = "null";
@@ -24,18 +28,32 @@ public final class JwtUtils {
 
     }
 
+    /**
+     * 生成 token
+     *
+     * @param o
+     * @return
+     * @throws JsonProcessingException
+     */
     public static String buildJwt(Object o) throws JsonProcessingException {
         return Jwts.builder()
                 //SECRET_KEY是加密算法对应的密钥，这里使用额是HS256加密算法
                 .signWith(SignatureAlgorithm.HS256, PRIVATE_KEY)
                 //expTime是过期时间
-                .setExpiration(new Date(System.currentTimeMillis() + 60 * 60 * 1000))
+//                .setExpiration(new Date(System.currentTimeMillis() + 60 * 60 * 1000))
+                .setExpiration(new Date(Long.MAX_VALUE))
                 .claim(LOGIN_USER, MAPPER.writeValueAsString(o))
                 //令牌的发行者
                 .setIssuer("itning")
                 .compact();
     }
 
+    /**
+     * 验证 token，解析登录用户信息
+     *
+     * @param jwt
+     * @return
+     */
     public static LoginUser getLoginUser(String jwt) {
         if (DEFAULT_STR.equals(jwt)) {
             throw new CasException("请先登陆", HttpStatus.UNAUTHORIZED);
@@ -55,6 +73,7 @@ public final class JwtUtils {
             if (loginUser == null) {
                 throw new CasException("登陆失败", HttpStatus.UNAUTHORIZED);
             } else {
+                LOGGER.info("登录用户信息：{}", loginUser);
                 return loginUser;
             }
             //在解析JWT字符串时，如果密钥不正确，将会解析失败，抛出SignatureException异常，说明该JWT字符串是伪造的

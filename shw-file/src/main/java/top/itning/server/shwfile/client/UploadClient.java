@@ -15,7 +15,7 @@ import java.util.Optional;
 /**
  * 上传服务远程接口
  *
- * @author itning
+ *
  * @date 2019/5/4 10:38
  */
 @FeignClient(name = "upload")

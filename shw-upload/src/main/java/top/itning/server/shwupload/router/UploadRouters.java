@@ -18,7 +18,7 @@ import static org.springframework.web.reactive.function.server.RouterFunctions.r
 /**
  * 上传路由
  *
- * @author itning
+ *
  * @date 2019/5/2 16:53
  */
 @Configuration

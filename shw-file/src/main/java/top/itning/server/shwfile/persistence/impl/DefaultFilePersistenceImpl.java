@@ -19,7 +19,7 @@ import java.util.Optional;
  * 该类将文件简单持久化到硬盘中
  * 使用作业ID分文件夹
  *
- * @author itning
+ *
  * @date 2019/5/3 11:56
  */
 @Component

@@ -6,7 +6,7 @@ import top.itning.server.shwnotice.entity.Notice;
 /**
  * 通知服务
  *
- * @author itning
+ *
  * @date 2019/5/4 17:00
  */
 public interface NoticeService {

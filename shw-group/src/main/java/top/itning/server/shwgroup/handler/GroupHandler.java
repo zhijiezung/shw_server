@@ -19,7 +19,7 @@ import static top.itning.server.common.util.Preconditions.*;
 /**
  * 群组请求处理器
  *
- * @author itning
+ *
  * @date 2019/4/29 14:08
  */
 @Component

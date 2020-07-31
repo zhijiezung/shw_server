@@ -7,7 +7,7 @@ import java.util.Objects;
 /**
  * 包含三个对象的Tuple
  *
- * @author itning
+ *
  * @date 2019/4/30 21:47
  */
 public class Tuple3<T1, T2, T3> {

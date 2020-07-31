@@ -3,7 +3,7 @@ package top.itning.server.shwfile.pojo;
 /**
  * 文件上传元数据
  *
- * @author itning
+ *
  * @date 2019/5/3 11:15
  */
 public class FileUploadMetaData {

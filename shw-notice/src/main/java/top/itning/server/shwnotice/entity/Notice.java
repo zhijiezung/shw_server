@@ -11,7 +11,7 @@ import java.util.Date;
 /**
  * 通知
  *
- * @author itning
+ *
  */
 @Document(collection = "notice")
 public class Notice {

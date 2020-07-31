@@ -6,7 +6,7 @@ import org.springframework.messaging.MessageChannel;
 /**
  * 上传消息
  *
- * @author itning
+ *
  * @date 2019/5/3 12:20
  */
 public interface UploadMessage {

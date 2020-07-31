@@ -5,7 +5,7 @@ import org.springframework.cloud.client.SpringCloudApplication;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 
 /**
- * @author itning
+ *
  */
 @SpringCloudApplication
 @EnableFeignClients

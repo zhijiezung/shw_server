@@ -5,7 +5,7 @@ import java.util.Date;
 /**
  * 群组
  *
- * @author itning
+ *
  * @date 2019/4/29 11:43
  */
 public class Group {

@@ -8,7 +8,7 @@ import org.springframework.data.mongodb.core.mapping.Field;
 /**
  * 学生实体
  *
- * @author itning
+ *
  * @date 2019/4/30 13:08
  */
 @Document(collection = "student")

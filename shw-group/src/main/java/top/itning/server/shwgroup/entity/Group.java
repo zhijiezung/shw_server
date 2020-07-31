@@ -11,7 +11,7 @@ import java.util.UUID;
 /**
  * 群组
  *
- * @author itning
+ *
  * @date 2019/4/29 11:43
  */
 @Document(collection = "group")

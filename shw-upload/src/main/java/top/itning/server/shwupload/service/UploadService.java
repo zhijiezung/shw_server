@@ -7,7 +7,7 @@ import top.itning.server.shwupload.entity.Upload;
 /**
  * 上传服务
  *
- * @author itning
+ *
  * @date 2019/5/2 16:53
  */
 public interface UploadService {

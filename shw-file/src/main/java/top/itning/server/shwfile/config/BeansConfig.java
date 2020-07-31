@@ -9,7 +9,7 @@ import javax.servlet.MultipartConfigElement;
 /**
  * Beans Config
  *
- * @author itning
+ *
  */
 @Configuration
 public class BeansConfig {

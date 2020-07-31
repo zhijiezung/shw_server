@@ -11,7 +11,7 @@ import java.util.Optional;
 /**
  * 作业服务远程调用接口
  *
- * @author itning
+ *
  * @date 2019/5/5 19:47
  */
 @FeignClient(name = "work")

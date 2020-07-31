@@ -12,7 +12,7 @@ import java.util.Optional;
 /**
  * 群组远程调用
  *
- * @author itning
+ *
  * @date 2019/5/1 14:23
  */
 @FeignClient(name = "group")

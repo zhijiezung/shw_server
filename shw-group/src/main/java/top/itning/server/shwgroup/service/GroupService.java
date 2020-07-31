@@ -9,7 +9,7 @@ import top.itning.server.shwgroup.entity.Group;
 /**
  * 群组服务
  *
- * @author itning
+ *
  * @date 2019/4/29 12:27
  */
 public interface GroupService {

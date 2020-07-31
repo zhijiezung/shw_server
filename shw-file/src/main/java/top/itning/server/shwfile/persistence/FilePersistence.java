@@ -9,7 +9,7 @@ import java.util.Optional;
 /**
  * 文件持久化接口
  *
- * @author itning
+ *
  * @date 2019/5/3 11:54
  */
 public interface FilePersistence {

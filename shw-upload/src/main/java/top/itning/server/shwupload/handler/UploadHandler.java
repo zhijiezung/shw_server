@@ -15,7 +15,7 @@ import static top.itning.server.common.util.Preconditions.*;
 /**
  * 上传处理器
  *
- * @author itning
+ *
  * @date 2019/5/2 16:53
  */
 @Component

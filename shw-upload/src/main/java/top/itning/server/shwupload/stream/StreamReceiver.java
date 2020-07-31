@@ -11,7 +11,7 @@ import top.itning.server.shwupload.service.UploadService;
 /**
  * 消息接收
  *
- * @author itning
+ *
  */
 @Component
 @EnableBinding({UploadMessage.class, StudentGroupMessage.class, DelWorkMessage.class})

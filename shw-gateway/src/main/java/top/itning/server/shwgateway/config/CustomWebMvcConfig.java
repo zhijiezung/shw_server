@@ -7,7 +7,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 /**
  * MVC参数配置
  *
- * @author itning
+ *
  */
 @Configuration
 public class CustomWebMvcConfig implements WebMvcConfigurer {

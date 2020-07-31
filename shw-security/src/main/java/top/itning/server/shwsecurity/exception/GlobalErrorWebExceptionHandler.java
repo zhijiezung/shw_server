@@ -17,7 +17,7 @@ import java.util.Map;
 /**
  * 全局错误异常处理器
  *
- * @author itning
+ *
  * @date 2019/4/29 18:13
  */
 @Component

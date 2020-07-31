@@ -11,7 +11,7 @@ import top.itning.server.shwfile.service.FileService;
 /**
  * 消息接收
  *
- * @author itning
+ *
  */
 @Component
 @EnableBinding(UploadMessage.class)

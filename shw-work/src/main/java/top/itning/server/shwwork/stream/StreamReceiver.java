@@ -9,7 +9,7 @@ import top.itning.server.shwwork.service.WorkService;
 /**
  * 消息接收
  *
- * @author itning
+ *
  */
 @Component
 @EnableBinding({DelWorkMessage.class, DelGroupMessage.class})

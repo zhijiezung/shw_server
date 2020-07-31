@@ -2,12 +2,141 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="21ae2cd2-8f0f-4b70-9197-5011a58b747e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/docs/zipkin.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-common/src/main/java/top/itning/server/common/exception/BaseException.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-common/src/main/java/top/itning/server/common/exception/BaseException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-common/src/main/java/top/itning/server/common/exception/CasException.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-common/src/main/java/top/itning/server/common/exception/CasException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-common/src/main/java/top/itning/server/common/exception/FileException.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-common/src/main/java/top/itning/server/common/exception/FileException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-common/src/main/java/top/itning/server/common/exception/NoSuchFiledValueException.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-common/src/main/java/top/itning/server/common/exception/NoSuchFiledValueException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-common/src/main/java/top/itning/server/common/exception/NullFiledException.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-common/src/main/java/top/itning/server/common/exception/NullFiledException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-common/src/main/java/top/itning/server/common/exception/PermissionsException.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-common/src/main/java/top/itning/server/common/exception/PermissionsException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-common/src/main/java/top/itning/server/common/exception/RoleException.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-common/src/main/java/top/itning/server/common/exception/RoleException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-common/src/main/java/top/itning/server/common/model/LoginUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-common/src/main/java/top/itning/server/common/model/LoginUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-common/src/main/java/top/itning/server/common/model/RestModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-common/src/main/java/top/itning/server/common/model/RestModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-common/src/main/java/top/itning/server/common/util/Preconditions.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-common/src/main/java/top/itning/server/common/util/Preconditions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-eureka/src/main/java/top/itning/server/shweureka/ShwEurekaApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-eureka/src/main/java/top/itning/server/shweureka/ShwEurekaApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-file/src/main/java/top/itning/server/shwfile/ShwFileApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-file/src/main/java/top/itning/server/shwfile/ShwFileApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-file/src/main/java/top/itning/server/shwfile/client/SecurityClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-file/src/main/java/top/itning/server/shwfile/client/SecurityClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-file/src/main/java/top/itning/server/shwfile/client/UploadClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-file/src/main/java/top/itning/server/shwfile/client/UploadClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-file/src/main/java/top/itning/server/shwfile/client/WorkClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-file/src/main/java/top/itning/server/shwfile/client/WorkClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-file/src/main/java/top/itning/server/shwfile/client/entity/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-file/src/main/java/top/itning/server/shwfile/client/entity/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-file/src/main/java/top/itning/server/shwfile/client/entity/Upload.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-file/src/main/java/top/itning/server/shwfile/client/entity/Upload.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-file/src/main/java/top/itning/server/shwfile/client/entity/Work.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-file/src/main/java/top/itning/server/shwfile/client/entity/Work.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-file/src/main/java/top/itning/server/shwfile/config/BeansConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-file/src/main/java/top/itning/server/shwfile/config/BeansConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-file/src/main/java/top/itning/server/shwfile/controller/FileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-file/src/main/java/top/itning/server/shwfile/controller/FileController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-file/src/main/java/top/itning/server/shwfile/persistence/FilePersistence.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-file/src/main/java/top/itning/server/shwfile/persistence/FilePersistence.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-file/src/main/java/top/itning/server/shwfile/persistence/impl/DefaultFilePersistenceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-file/src/main/java/top/itning/server/shwfile/persistence/impl/DefaultFilePersistenceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-file/src/main/java/top/itning/server/shwfile/pojo/FileUploadMetaData.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-file/src/main/java/top/itning/server/shwfile/pojo/FileUploadMetaData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-file/src/main/java/top/itning/server/shwfile/service/FileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-file/src/main/java/top/itning/server/shwfile/service/FileService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-file/src/main/java/top/itning/server/shwfile/service/impl/FileServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-file/src/main/java/top/itning/server/shwfile/service/impl/FileServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-file/src/main/java/top/itning/server/shwfile/stream/UploadMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-file/src/main/java/top/itning/server/shwfile/stream/UploadMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-file/src/main/java/top/itning/server/shwfile/stream/UploadStreamReceiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-file/src/main/java/top/itning/server/shwfile/stream/UploadStreamReceiver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-file/src/main/java/top/itning/server/shwfile/util/FileUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-file/src/main/java/top/itning/server/shwfile/util/FileUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-gateway/src/main/java/top/itning/server/shwgateway/ShwGatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-gateway/src/main/java/top/itning/server/shwgateway/ShwGatewayApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-gateway/src/main/java/top/itning/server/shwgateway/config/CustomWebMvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-gateway/src/main/java/top/itning/server/shwgateway/config/CustomWebMvcConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-gateway/src/main/java/top/itning/server/shwgateway/filter/AuthorizationHeaderFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-gateway/src/main/java/top/itning/server/shwgateway/filter/AuthorizationHeaderFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-gateway/src/main/java/top/itning/server/shwgateway/filter/CorsFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-gateway/src/main/java/top/itning/server/shwgateway/filter/CorsFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-gateway/src/main/java/top/itning/server/shwgateway/filter/ErrorFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-gateway/src/main/java/top/itning/server/shwgateway/filter/ErrorFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-gateway/src/main/java/top/itning/server/shwgateway/handler/ErrorHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-gateway/src/main/java/top/itning/server/shwgateway/handler/ErrorHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shw-gateway/src/main/java/top/itning/server/shwgateway/util/JwtUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-gateway/src/main/java/top/itning/server/shwgateway/util/JwtUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-group/src/main/java/top/itning/server/shwgroup/ShwGroupApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-group/src/main/java/top/itning/server/shwgroup/ShwGroupApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-group/src/main/java/top/itning/server/shwgroup/entity/Group.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-group/src/main/java/top/itning/server/shwgroup/entity/Group.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-group/src/main/java/top/itning/server/shwgroup/exception/GlobalErrorAttributes.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-group/src/main/java/top/itning/server/shwgroup/exception/GlobalErrorAttributes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-group/src/main/java/top/itning/server/shwgroup/exception/GlobalErrorWebExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-group/src/main/java/top/itning/server/shwgroup/exception/GlobalErrorWebExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-group/src/main/java/top/itning/server/shwgroup/exception/JsonHttpMessageWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-group/src/main/java/top/itning/server/shwgroup/exception/JsonHttpMessageWriter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-group/src/main/java/top/itning/server/shwgroup/handler/GroupHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-group/src/main/java/top/itning/server/shwgroup/handler/GroupHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-group/src/main/java/top/itning/server/shwgroup/repository/GroupRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-group/src/main/java/top/itning/server/shwgroup/repository/GroupRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-group/src/main/java/top/itning/server/shwgroup/router/GroupRouters.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-group/src/main/java/top/itning/server/shwgroup/router/GroupRouters.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-group/src/main/java/top/itning/server/shwgroup/service/GroupService.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-group/src/main/java/top/itning/server/shwgroup/service/GroupService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-group/src/main/java/top/itning/server/shwgroup/service/impl/GroupServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-group/src/main/java/top/itning/server/shwgroup/service/impl/GroupServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-group/src/main/java/top/itning/server/shwgroup/stream/DelGroupMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-group/src/main/java/top/itning/server/shwgroup/stream/DelGroupMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-group/src/main/java/top/itning/server/shwgroup/util/ReactiveMongoHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-group/src/main/java/top/itning/server/shwgroup/util/ReactiveMongoHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-hystrix-dashboard/src/main/java/top/itning/server/shwhystrixdashboard/ShwHystrixDashboardApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-hystrix-dashboard/src/main/java/top/itning/server/shwhystrixdashboard/ShwHystrixDashboardApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-notice/src/main/java/top/itning/server/shwnotice/ShwNoticeApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-notice/src/main/java/top/itning/server/shwnotice/ShwNoticeApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-notice/src/main/java/top/itning/server/shwnotice/entity/Notice.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-notice/src/main/java/top/itning/server/shwnotice/entity/Notice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-notice/src/main/java/top/itning/server/shwnotice/exception/GlobalErrorAttributes.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-notice/src/main/java/top/itning/server/shwnotice/exception/GlobalErrorAttributes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-notice/src/main/java/top/itning/server/shwnotice/exception/GlobalErrorWebExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-notice/src/main/java/top/itning/server/shwnotice/exception/GlobalErrorWebExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-notice/src/main/java/top/itning/server/shwnotice/exception/JsonHttpMessageWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-notice/src/main/java/top/itning/server/shwnotice/exception/JsonHttpMessageWriter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-notice/src/main/java/top/itning/server/shwnotice/handler/NoticeHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-notice/src/main/java/top/itning/server/shwnotice/handler/NoticeHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-notice/src/main/java/top/itning/server/shwnotice/repository/NoticeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-notice/src/main/java/top/itning/server/shwnotice/repository/NoticeRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-notice/src/main/java/top/itning/server/shwnotice/router/NoticeRouters.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-notice/src/main/java/top/itning/server/shwnotice/router/NoticeRouters.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-notice/src/main/java/top/itning/server/shwnotice/service/NoticeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-notice/src/main/java/top/itning/server/shwnotice/service/NoticeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-notice/src/main/java/top/itning/server/shwnotice/service/impl/NoticeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-notice/src/main/java/top/itning/server/shwnotice/service/impl/NoticeServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-security/src/main/java/top/itning/server/shwsecurity/ShwSecurityApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-security/src/main/java/top/itning/server/shwsecurity/ShwSecurityApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-security/src/main/java/top/itning/server/shwsecurity/config/BeansConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-security/src/main/java/top/itning/server/shwsecurity/config/BeansConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-security/src/main/java/top/itning/server/shwsecurity/config/CasProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-security/src/main/java/top/itning/server/shwsecurity/config/CasProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-security/src/main/java/top/itning/server/shwsecurity/entity/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-security/src/main/java/top/itning/server/shwsecurity/entity/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-security/src/main/java/top/itning/server/shwsecurity/exception/GlobalErrorAttributes.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-security/src/main/java/top/itning/server/shwsecurity/exception/GlobalErrorAttributes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-security/src/main/java/top/itning/server/shwsecurity/exception/GlobalErrorWebExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-security/src/main/java/top/itning/server/shwsecurity/exception/GlobalErrorWebExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-security/src/main/java/top/itning/server/shwsecurity/exception/JsonHttpMessageWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-security/src/main/java/top/itning/server/shwsecurity/exception/JsonHttpMessageWriter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shw-security/src/main/java/top/itning/server/shwsecurity/handler/LoginHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-security/src/main/java/top/itning/server/shwsecurity/handler/LoginHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shw-security/src/main/resources/application-bat.properties" beforeDir="false" afterPath="$PROJECT_DIR$/shw-security/src/main/resources/application-bat.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shw-security/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/shw-security/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-security/src/main/java/top/itning/server/shwsecurity/repository/StudentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-security/src/main/java/top/itning/server/shwsecurity/repository/StudentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-security/src/main/java/top/itning/server/shwsecurity/router/LoginRouters.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-security/src/main/java/top/itning/server/shwsecurity/router/LoginRouters.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-security/src/main/java/top/itning/server/shwsecurity/util/JwtUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-security/src/main/java/top/itning/server/shwsecurity/util/JwtUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-studentgroup/src/main/java/top/itning/server/shwstudentgroup/ShwStudentgroupApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-studentgroup/src/main/java/top/itning/server/shwstudentgroup/ShwStudentgroupApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-studentgroup/src/main/java/top/itning/server/shwstudentgroup/client/GroupClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-studentgroup/src/main/java/top/itning/server/shwstudentgroup/client/GroupClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-studentgroup/src/main/java/top/itning/server/shwstudentgroup/client/entrty/Group.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-studentgroup/src/main/java/top/itning/server/shwstudentgroup/client/entrty/Group.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-studentgroup/src/main/java/top/itning/server/shwstudentgroup/config/BeansConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-studentgroup/src/main/java/top/itning/server/shwstudentgroup/config/BeansConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-studentgroup/src/main/java/top/itning/server/shwstudentgroup/dto/StudentGroupDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-studentgroup/src/main/java/top/itning/server/shwstudentgroup/dto/StudentGroupDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-studentgroup/src/main/java/top/itning/server/shwstudentgroup/entity/StudentGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-studentgroup/src/main/java/top/itning/server/shwstudentgroup/entity/StudentGroup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-studentgroup/src/main/java/top/itning/server/shwstudentgroup/exception/GlobalErrorAttributes.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-studentgroup/src/main/java/top/itning/server/shwstudentgroup/exception/GlobalErrorAttributes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-studentgroup/src/main/java/top/itning/server/shwstudentgroup/exception/GlobalErrorWebExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-studentgroup/src/main/java/top/itning/server/shwstudentgroup/exception/GlobalErrorWebExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-studentgroup/src/main/java/top/itning/server/shwstudentgroup/exception/JsonHttpMessageWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-studentgroup/src/main/java/top/itning/server/shwstudentgroup/exception/JsonHttpMessageWriter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-studentgroup/src/main/java/top/itning/server/shwstudentgroup/handler/StudentGroupHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-studentgroup/src/main/java/top/itning/server/shwstudentgroup/handler/StudentGroupHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-studentgroup/src/main/java/top/itning/server/shwstudentgroup/repository/StudentGroupRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-studentgroup/src/main/java/top/itning/server/shwstudentgroup/repository/StudentGroupRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-studentgroup/src/main/java/top/itning/server/shwstudentgroup/router/StudentGroupRouters.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-studentgroup/src/main/java/top/itning/server/shwstudentgroup/router/StudentGroupRouters.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-studentgroup/src/main/java/top/itning/server/shwstudentgroup/service/StudentGroupService.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-studentgroup/src/main/java/top/itning/server/shwstudentgroup/service/StudentGroupService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-studentgroup/src/main/java/top/itning/server/shwstudentgroup/service/impl/StudentGroupServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-studentgroup/src/main/java/top/itning/server/shwstudentgroup/service/impl/StudentGroupServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-studentgroup/src/main/java/top/itning/server/shwstudentgroup/stream/DelGroupMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-studentgroup/src/main/java/top/itning/server/shwstudentgroup/stream/DelGroupMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-studentgroup/src/main/java/top/itning/server/shwstudentgroup/stream/StreamReceiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-studentgroup/src/main/java/top/itning/server/shwstudentgroup/stream/StreamReceiver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-studentgroup/src/main/java/top/itning/server/shwstudentgroup/stream/StudentGroupMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-studentgroup/src/main/java/top/itning/server/shwstudentgroup/stream/StudentGroupMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-studentgroup/src/main/java/top/itning/server/shwstudentgroup/util/ReactiveMongoHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-studentgroup/src/main/java/top/itning/server/shwstudentgroup/util/ReactiveMongoHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-studentgroup/src/main/java/top/itning/server/shwstudentgroup/util/Tuple.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-studentgroup/src/main/java/top/itning/server/shwstudentgroup/util/Tuple.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-upload/src/main/java/top/itning/server/shwupload/ShwUploadApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-upload/src/main/java/top/itning/server/shwupload/ShwUploadApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-upload/src/main/java/top/itning/server/shwupload/client/WorkClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-upload/src/main/java/top/itning/server/shwupload/client/WorkClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-upload/src/main/java/top/itning/server/shwupload/client/entity/Work.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-upload/src/main/java/top/itning/server/shwupload/client/entity/Work.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-upload/src/main/java/top/itning/server/shwupload/entity/Upload.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-upload/src/main/java/top/itning/server/shwupload/entity/Upload.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-upload/src/main/java/top/itning/server/shwupload/exception/GlobalErrorAttributes.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-upload/src/main/java/top/itning/server/shwupload/exception/GlobalErrorAttributes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-upload/src/main/java/top/itning/server/shwupload/exception/GlobalErrorWebExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-upload/src/main/java/top/itning/server/shwupload/exception/GlobalErrorWebExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-upload/src/main/java/top/itning/server/shwupload/exception/JsonHttpMessageWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-upload/src/main/java/top/itning/server/shwupload/exception/JsonHttpMessageWriter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-upload/src/main/java/top/itning/server/shwupload/handler/UploadHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-upload/src/main/java/top/itning/server/shwupload/handler/UploadHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-upload/src/main/java/top/itning/server/shwupload/repository/UploadRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-upload/src/main/java/top/itning/server/shwupload/repository/UploadRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-upload/src/main/java/top/itning/server/shwupload/router/UploadRouters.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-upload/src/main/java/top/itning/server/shwupload/router/UploadRouters.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-upload/src/main/java/top/itning/server/shwupload/service/UploadService.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-upload/src/main/java/top/itning/server/shwupload/service/UploadService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-upload/src/main/java/top/itning/server/shwupload/service/impl/UploadServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-upload/src/main/java/top/itning/server/shwupload/service/impl/UploadServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-upload/src/main/java/top/itning/server/shwupload/stream/DelWorkMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-upload/src/main/java/top/itning/server/shwupload/stream/DelWorkMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-upload/src/main/java/top/itning/server/shwupload/stream/StreamReceiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-upload/src/main/java/top/itning/server/shwupload/stream/StreamReceiver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-upload/src/main/java/top/itning/server/shwupload/stream/StudentGroupMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-upload/src/main/java/top/itning/server/shwupload/stream/StudentGroupMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-upload/src/main/java/top/itning/server/shwupload/stream/UploadMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-upload/src/main/java/top/itning/server/shwupload/stream/UploadMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-upload/src/main/java/top/itning/server/shwupload/util/ReactiveMongoHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-upload/src/main/java/top/itning/server/shwupload/util/ReactiveMongoHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-work/src/main/java/top/itning/server/shwwork/ShwWorkApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-work/src/main/java/top/itning/server/shwwork/ShwWorkApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-work/src/main/java/top/itning/server/shwwork/client/GroupClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-work/src/main/java/top/itning/server/shwwork/client/GroupClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-work/src/main/java/top/itning/server/shwwork/client/SecurityClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-work/src/main/java/top/itning/server/shwwork/client/SecurityClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-work/src/main/java/top/itning/server/shwwork/client/StudentGroupClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-work/src/main/java/top/itning/server/shwwork/client/StudentGroupClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-work/src/main/java/top/itning/server/shwwork/client/UploadClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-work/src/main/java/top/itning/server/shwwork/client/UploadClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-work/src/main/java/top/itning/server/shwwork/client/entity/Group.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-work/src/main/java/top/itning/server/shwwork/client/entity/Group.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-work/src/main/java/top/itning/server/shwwork/client/entity/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-work/src/main/java/top/itning/server/shwwork/client/entity/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-work/src/main/java/top/itning/server/shwwork/client/entity/StudentGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-work/src/main/java/top/itning/server/shwwork/client/entity/StudentGroup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-work/src/main/java/top/itning/server/shwwork/client/entity/Upload.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-work/src/main/java/top/itning/server/shwwork/client/entity/Upload.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-work/src/main/java/top/itning/server/shwwork/config/BeansConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-work/src/main/java/top/itning/server/shwwork/config/BeansConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-work/src/main/java/top/itning/server/shwwork/config/ModelMapperConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-work/src/main/java/top/itning/server/shwwork/config/ModelMapperConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-work/src/main/java/top/itning/server/shwwork/dto/WorkDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-work/src/main/java/top/itning/server/shwwork/dto/WorkDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-work/src/main/java/top/itning/server/shwwork/dto/WorkDetailsDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-work/src/main/java/top/itning/server/shwwork/dto/WorkDetailsDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-work/src/main/java/top/itning/server/shwwork/entity/Work.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-work/src/main/java/top/itning/server/shwwork/entity/Work.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-work/src/main/java/top/itning/server/shwwork/exception/GlobalErrorAttributes.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-work/src/main/java/top/itning/server/shwwork/exception/GlobalErrorAttributes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-work/src/main/java/top/itning/server/shwwork/exception/GlobalErrorWebExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-work/src/main/java/top/itning/server/shwwork/exception/GlobalErrorWebExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-work/src/main/java/top/itning/server/shwwork/exception/JsonHttpMessageWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-work/src/main/java/top/itning/server/shwwork/exception/JsonHttpMessageWriter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-work/src/main/java/top/itning/server/shwwork/handler/WorkHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-work/src/main/java/top/itning/server/shwwork/handler/WorkHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-work/src/main/java/top/itning/server/shwwork/repository/WorkRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-work/src/main/java/top/itning/server/shwwork/repository/WorkRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-work/src/main/java/top/itning/server/shwwork/router/WorkRouters.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-work/src/main/java/top/itning/server/shwwork/router/WorkRouters.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-work/src/main/java/top/itning/server/shwwork/service/WorkService.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-work/src/main/java/top/itning/server/shwwork/service/WorkService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-work/src/main/java/top/itning/server/shwwork/service/impl/WorkServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-work/src/main/java/top/itning/server/shwwork/service/impl/WorkServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-work/src/main/java/top/itning/server/shwwork/stream/DelGroupMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-work/src/main/java/top/itning/server/shwwork/stream/DelGroupMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-work/src/main/java/top/itning/server/shwwork/stream/DelWorkMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-work/src/main/java/top/itning/server/shwwork/stream/DelWorkMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-work/src/main/java/top/itning/server/shwwork/stream/StreamReceiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-work/src/main/java/top/itning/server/shwwork/stream/StreamReceiver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-work/src/main/java/top/itning/server/shwwork/util/ReactiveMongoHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-work/src/main/java/top/itning/server/shwwork/util/ReactiveMongoHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-work/src/main/java/top/itning/server/shwwork/util/Tuple.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-work/src/main/java/top/itning/server/shwwork/util/Tuple.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-work/src/main/java/top/itning/server/shwwork/util/Tuple3.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-work/src/main/java/top/itning/server/shwwork/util/Tuple3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-work/src/test/java/top/itning/server/shwwork/TestJava.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-work/src/test/java/top/itning/server/shwwork/TestJava.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -544,7 +673,7 @@
       <workItem from="1595809190165" duration="7825000" />
       <workItem from="1595896325344" duration="21696000" />
       <workItem from="1595984341552" duration="5539000" />
-      <workItem from="1596069012198" duration="11687000" />
+      <workItem from="1596069012198" duration="13949000" />
     </task>
     <task id="LOCAL-00001" summary="docker 配置">
       <created>1594795026247</created>
@@ -588,7 +717,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595933537344</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="测试：security">
+      <created>1596103501365</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1596103501366</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -617,67 +753,7 @@
     <MESSAGE value="mark" />
     <MESSAGE value="yml profile 配置" />
     <MESSAGE value="测试：group 接口路由成功" />
-    <option name="LAST_COMMIT_MESSAGE" value="测试：group 接口路由成功" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/shw-security/src/main/java/top/itning/server/shwsecurity/handler/LoginHandler.java</url>
-          <line>128</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/shw-security/src/main/java/top/itning/server/shwsecurity/handler/LoginHandler.java</url>
-          <line>146</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/shw-security/src/main/java/top/itning/server/shwsecurity/handler/LoginHandler.java</url>
-          <line>196</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/shw-security/src/main/java/top/itning/server/shwsecurity/handler/LoginHandler.java</url>
-          <line>185</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/shw-security/src/main/java/top/itning/server/shwsecurity/handler/LoginHandler.java</url>
-          <line>171</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/shw-security/src/main/java/top/itning/server/shwsecurity/handler/LoginHandler.java</url>
-          <line>175</line>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/shw-security/src/main/java/top/itning/server/shwsecurity/handler/LoginHandler.java</url>
-          <line>84</line>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/shw-security/src/main/java/top/itning/server/shwsecurity/handler/LoginHandler.java</url>
-          <line>62</line>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/shw-security/src/main/java/top/itning/server/shwsecurity/handler/LoginHandler.java</url>
-          <line>57</line>
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/shw-security/src/main/java/top/itning/server/shwsecurity/handler/LoginHandler.java</url>
-          <line>52</line>
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/shw-security/src/main/java/top/itning/server/shwsecurity/handler/LoginHandler.java</url>
-          <line>45</line>
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="测试：security" />
+    <option name="LAST_COMMIT_MESSAGE" value="测试：security" />
   </component>
 </project>

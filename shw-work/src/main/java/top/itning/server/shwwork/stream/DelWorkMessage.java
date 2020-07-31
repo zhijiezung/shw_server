@@ -6,7 +6,7 @@ import org.springframework.messaging.MessageChannel;
 /**
  * 删除作业消息
  *
- * @author itning
+ *
  * @date 2019/5/4 13:42
  */
 public interface DelWorkMessage {

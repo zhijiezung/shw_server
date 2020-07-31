@@ -15,7 +15,7 @@ import java.util.Map;
 /**
  * 错误处理器
  *
- * @author itning
+ *
  * @date 2019/5/2 18:49
  */
 @RestController

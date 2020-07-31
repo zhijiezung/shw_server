@@ -5,7 +5,7 @@ import java.util.Date;
 /**
  * 群组群组DTO
  *
- * @author itning
+ *
  * @date 2019/4/30 20:59
  */
 public class StudentGroupDTO {

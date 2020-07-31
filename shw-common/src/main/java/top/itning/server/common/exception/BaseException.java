@@ -5,7 +5,7 @@ import org.springframework.http.HttpStatus;
 /**
  * 异常基类
  *
- * @author itning
+ *
  */
 public abstract class BaseException extends RuntimeException {
     private String msg;

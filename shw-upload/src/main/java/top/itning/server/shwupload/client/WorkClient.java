@@ -11,7 +11,7 @@ import java.util.List;
 /**
  * 作业远程调用
  *
- * @author itning
+ *
  * @date 2019/5/4 12:42
  */
 @FeignClient(name = "work")

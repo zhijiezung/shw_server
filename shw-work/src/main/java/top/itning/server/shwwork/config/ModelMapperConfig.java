@@ -12,7 +12,7 @@ import top.itning.server.shwwork.entity.Work;
 /**
  * ModelMapper Config
  *
- * @author itning
+ *
  */
 @Component
 public class ModelMapperConfig {

@@ -29,7 +29,6 @@ import static org.springframework.cloud.netflix.zuul.filters.support.FilterConst
  * 该过滤器检查请求是否包含{@link HttpHeaders#AUTHORIZATION}请求头，并将
  * 其转换为用户信息，如果转换失败将返回错误视图
  *
- * @author itning
  * @date 2019/4/29 22:48
  */
 @Component
@@ -37,7 +36,10 @@ public class AuthorizationHeaderFilter extends ZuulFilter {
     /**
      * 忽略过滤路径
      */
-    private static final String[] IGNORE_SERVER_PATH = {"/v2/user", "/v2/file/down"};
+    private static final String[] IGNORE_SERVER_PATH = {
+            "/v2/user",
+            "/v2/file/down"
+    };
 
     @Override
     public String filterType() {
