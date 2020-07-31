@@ -16,12 +16,19 @@ public class Student {
      * 学号
      */
     @Id
-    private String no;
+    private String no;  // 如果为空，则mongodb生成默认ID
+
     /**
      * 登录名
      */
     @Field("login_name")
     private String loginName;
+    /**
+     * 登录密码
+     */
+    @Field("login_pwd")
+    private String loginPwd;
+
     /**
      * 姓名
      */
@@ -33,6 +40,14 @@ public class Student {
      */
     @Field("clazz_id")
     private String clazzId;
+
+    public String getLoginPwd() {
+        return loginPwd;
+    }
+
+    public void setLoginPwd(String loginPwd) {
+        this.loginPwd = loginPwd;
+    }
 
     public String getNo() {
         return no;
@@ -71,6 +86,7 @@ public class Student {
         return "Student{" +
                 "no='" + no + '\'' +
                 ", loginName='" + loginName + '\'' +
+                ", loginPwd='" + loginPwd + '\'' +
                 ", name='" + name + '\'' +
                 ", clazzId='" + clazzId + '\'' +
                 '}';

@@ -9,4 +9,5 @@ import top.itning.server.shwsecurity.entity.Student;
  * @date 2019/4/30 13:10
  */
 public interface StudentRepository extends ReactiveMongoRepository<Student, String> {
+
 }

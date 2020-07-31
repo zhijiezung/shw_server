@@ -7,14 +7,11 @@ import org.dom4j.Node;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpHeaders;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.lang.NonNull;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
-import org.springframework.web.reactive.function.BodyInserters;
 import org.springframework.web.reactive.function.server.ServerRequest;
 import org.springframework.web.reactive.function.server.ServerResponse;
 import reactor.core.publisher.Mono;
@@ -30,7 +27,7 @@ import java.net.URLEncoder;
 import java.util.*;
 
 /**
- * 登陆处理器
+ * 登陆处理器（CAS单点登录）
  *
  * @date 2019/4/30 12:02
  */
@@ -48,17 +45,6 @@ public class LoginHandler {
         this.restTemplate = restTemplate;
         this.studentRepository = studentRepository;
         this.casProperties = casProperties;
-    }
-
-    /**
-     * 验证 token，解析登录用户信息
-     */
-    @NonNull
-    public Mono<ServerResponse> getLoginUser(ServerRequest request) {
-//        String jwt = request.headers().firstHeader("Authorization");
-        String jwt = request.headers().firstHeader(HttpHeaders.AUTHORIZATION);
-        return ServerResponse.ok().contentType(MediaType.APPLICATION_JSON)
-                .body(BodyInserters.fromValue(JwtUtils.getLoginUser(jwt)));
     }
 
     @NonNull
@@ -131,17 +117,6 @@ public class LoginHandler {
         } else {
             throw new RuntimeException("AUTHENTICATION failed : Body is Null");
         }
-    }
-
-    /**
-     * 使用账号密码进行登陆
-     *
-     * @param account 账号
-     * @param pwd     密码
-     * @return Mono<ServerResponse>
-     */
-    private Mono<ServerResponse> doLoginWithAccountPwd(String account, String pwd) {
-        return ServerResponse.status(HttpStatus.OK).build();
     }
 
     /**

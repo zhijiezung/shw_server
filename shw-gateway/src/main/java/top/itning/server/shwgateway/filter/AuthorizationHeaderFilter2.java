@@ -45,7 +45,8 @@ public class AuthorizationHeaderFilter2 extends ZuulFilter {
      * 忽略过滤路径
      */
     private static final String[] IGNORE_SERVER_PATH = {
-            "/v2/user",
+            "/v2/security/user/student/register",   // 用户注册（学生）
+            "/v2/security/user/student/login",      // 用户登录（学生）
             "/v2/file/down"
     };
 
@@ -63,6 +64,7 @@ public class AuthorizationHeaderFilter2 extends ZuulFilter {
     public boolean shouldFilter() {
         RequestContext requestContext = RequestContext.getCurrentContext();
         String servletPath = requestContext.getRequest().getServletPath();
+        logger.debug("request servlet path: {}", servletPath);
         for (String path : IGNORE_SERVER_PATH) {
             if (servletPath.startsWith(path)) {
                 return false;

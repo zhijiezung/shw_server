@@ -5,6 +5,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.web.reactive.function.server.RouterFunction;
 import org.springframework.web.reactive.function.server.ServerResponse;
 import top.itning.server.shwsecurity.entity.Student;
+import top.itning.server.shwsecurity.handler.JwtHandler;
 import top.itning.server.shwsecurity.handler.LoginHandler;
 import top.itning.server.shwsecurity.repository.StudentRepository;
 
@@ -28,7 +29,9 @@ public class LoginRouters {
     }
 
     @Bean
-    RouterFunction<ServerResponse> userRouter(LoginHandler loginHandler) {
+    RouterFunction<ServerResponse> userRouter(LoginHandler loginHandler,
+                                              JwtHandler jwtHandler)
+    {
         return nest(
                 all(),
                 route()
@@ -37,10 +40,17 @@ public class LoginRouters {
                         .GET("/logout", loginHandler::logout)
                         .build())
                 .andNest(
+                        path("/user/student"),
+                        route()
+                                .POST("/register", jwtHandler::register)
+                                .POST("/login", serverRequest -> ServerResponse.ok().body(studentRepository.findById(serverRequest.pathVariable("id")), Student.class))
+                                .build()
+                )
+                .andNest(
                         path("/internal"),
                         route()
                                 .GET("/findStudentById/{id}", serverRequest -> ServerResponse.ok().body(studentRepository.findById(serverRequest.pathVariable("id")), Student.class))
-                                .GET("/getLoginUser", loginHandler::getLoginUser)
+                                .GET("/getLoginUser", jwtHandler::getLoginUser)
                                 .build()
                 );
     }

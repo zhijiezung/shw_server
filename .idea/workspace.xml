@@ -2,16 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="21ae2cd2-8f0f-4b70-9197-5011a58b747e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/shw-security/src/main/java/top/itning/server/shwsecurity/ShwSecurityApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-security/src/main/java/top/itning/server/shwsecurity/ShwSecurityApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shw-security/src/main/java/top/itning/server/shwsecurity/config/BeansConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-security/src/main/java/top/itning/server/shwsecurity/config/BeansConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shw-security/src/main/java/top/itning/server/shwsecurity/config/CasProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-security/src/main/java/top/itning/server/shwsecurity/config/CasProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shw-security/src/main/java/top/itning/server/shwsecurity/handler/JwtHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-common/src/main/java/top/itning/server/common/exception/NullFiledException.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-common/src/main/java/top/itning/server/common/exception/NullFiledException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-common/src/main/java/top/itning/server/common/model/LoginUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-common/src/main/java/top/itning/server/common/model/LoginUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shw-gateway/src/main/java/top/itning/server/shwgateway/filter/AuthorizationHeaderFilter2.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-gateway/src/main/java/top/itning/server/shwgateway/filter/AuthorizationHeaderFilter2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shw-security/src/main/java/top/itning/server/shwsecurity/entity/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-security/src/main/java/top/itning/server/shwsecurity/entity/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shw-security/src/main/java/top/itning/server/shwsecurity/exception/GlobalErrorWebExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-security/src/main/java/top/itning/server/shwsecurity/exception/GlobalErrorWebExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shw-security/src/main/java/top/itning/server/shwsecurity/exception/JsonHttpMessageWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-security/src/main/java/top/itning/server/shwsecurity/exception/JsonHttpMessageWriter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shw-security/src/main/java/top/itning/server/shwsecurity/handler/LoginHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-security/src/main/java/top/itning/server/shwsecurity/handler/LoginHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shw-security/src/main/java/top/itning/server/shwsecurity/repository/StudentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-security/src/main/java/top/itning/server/shwsecurity/repository/StudentRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shw-security/src/main/java/top/itning/server/shwsecurity/router/LoginRouters.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-security/src/main/java/top/itning/server/shwsecurity/router/LoginRouters.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shw-security/src/main/java/top/itning/server/shwsecurity/util/JwtUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-security/src/main/java/top/itning/server/shwsecurity/util/JwtUtils.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -75,14 +74,18 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/docs" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
     <property name="typescript.add.unambiguous.imports.on.the.fly" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="top.itning.server.shwsecurity.repository" />
+      <recent name="top.itning.server.shwsecurity.handler" />
       <recent name="top.itning.server.shwgateway.filter" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -110,7 +113,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ShwGatewayApplication">
+  <component name="RunManager" selected="Spring Boot.ShwSecurityApplication">
     <configuration name="JwtUtilsTest.buildJwt" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="shw-gateway" />
       <extension name="coverage">
@@ -551,7 +554,7 @@
       <workItem from="1595809190165" duration="7825000" />
       <workItem from="1595896325344" duration="21696000" />
       <workItem from="1595984341552" duration="5539000" />
-      <workItem from="1596069012198" duration="32003000" />
+      <workItem from="1596069012198" duration="41322000" />
     </task>
     <task id="LOCAL-00001" summary="docker 配置">
       <created>1594795026247</created>
@@ -616,7 +619,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596181435510</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="mark">
+      <created>1596181734191</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1596181734191</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -642,12 +652,12 @@
     <MESSAGE value="docker 配置" />
     <MESSAGE value="开始学习zuul" />
     <MESSAGE value="commit .idea/" />
-    <MESSAGE value="mark" />
     <MESSAGE value="yml profile 配置" />
     <MESSAGE value="测试：group 接口路由成功" />
     <MESSAGE value="测试：security" />
     <MESSAGE value="Remove author information." />
     <MESSAGE value="zuul -&gt; 安全中心 -&gt; 验证jwt" />
-    <option name="LAST_COMMIT_MESSAGE" value="zuul -&gt; 安全中心 -&gt; 验证jwt" />
+    <MESSAGE value="mark" />
+    <option name="LAST_COMMIT_MESSAGE" value="mark" />
   </component>
 </project>

@@ -4,8 +4,6 @@ import java.io.Serializable;
 
 /**
  * 登陆用户
- *
- *
  */
 public class LoginUser implements Serializable {
     /**
@@ -19,34 +17,68 @@ public class LoginUser implements Serializable {
     @Deprecated
     public static final String TEACHER_USER = "13";
 
+
     /**
      * id : ID
+     */
+    private String id;
+    /**
      * no : 学号或教师编号
+     */
+    private String no;
+    /**
      * loginName : 身份证号码或登录名
+     */
+    private String loginName;
+    /**
      * userType : 99(学生) 13(教师)
+     */
+    private String userType;
+    /**
      * name : 姓名
+     */
+    private String name;
+    /**
      * phone :
+     */
+    private String phone;
+    /**
      * email :
+     */
+    private String email;
+    /**
      * mobile :
+     */
+    private String mobile;
+    /**
      * loginIp : 登陆IP
+     */
+    private String loginIp;
+    /**
      * remarks : uninitialized
      */
-
-    private String id;
-    private String no;
-    private String loginName;
-    private String userType;
-    private String name;
-    private String phone;
-    private String email;
-    private String mobile;
-    private String loginIp;
     private String remarks;
+    /**
+     * roleId  :
+     */
     private String roleId;
+    /**
+     * dormId :
+     */
     private String dormId;
+    /**
+     * clazzId :
+     */
     private String clazzId;
+    /**
+     * companyId :
+     */
     private String companyId;
+    /**
+     * officeId :
+     */
     private String officeId;
+
 
     public String getId() {
         return id;

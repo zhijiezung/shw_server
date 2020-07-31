@@ -11,7 +11,7 @@
  Target Server Version : 40203
  File Encoding         : 65001
 
- Date: 28/07/2020 18:46:15
+ Date: 31/07/2020 18:25:24
 */
 
 
@@ -43,6 +43,24 @@ db.getCollection("group").insert([ {
     "gmt_create": ISODate("2020-07-08T08:50:14.795Z"),
     "gmt_modified": ISODate("2020-07-08T08:50:14.795Z"),
     _class: "top.itning.server.shwgroup.entity.Group"
+} ]);
+
+// ----------------------------
+// Collection structure for student
+// ----------------------------
+db.getCollection("student").drop();
+db.createCollection("student");
+
+// ----------------------------
+// Documents of student
+// ----------------------------
+db.getCollection("student").insert([ {
+    _id: "1",
+    "login_name": "test",
+    "login_pwd": "123456",
+    name: "张志杰",
+    "clazz_id": "1",
+    _class: "top.itning.server.shwsecurity.entity.Student"
 } ]);
 
 // ----------------------------
