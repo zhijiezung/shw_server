@@ -10,8 +10,6 @@ import top.itning.server.shwfile.service.FileService;
 
 /**
  * 消息接收
- *
- *
  */
 @Component
 @EnableBinding(UploadMessage.class)
