@@ -17,4 +17,6 @@ public interface StudentRepository extends ReactiveMongoRepository<Student, Stri
      * @return
      */
     Mono<Boolean> existsByLoginName(String loginName);
+
+    Mono<Student> findByLoginNameAndLoginPwd(String loginName, String loginPwd);
 }

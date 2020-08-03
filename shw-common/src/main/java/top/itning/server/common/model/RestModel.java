@@ -99,21 +99,23 @@ public class RestModel<T> implements Serializable {
         return ServerResponse.noContent().build();
     }
 
-    public RestModel() {
-    }
 
     public RestModel(HttpStatus status, String msg, T data) {
         this(status.value(), msg, data);
+    }
+
+    public RestModel(T data) {
+        this(HttpStatus.OK, "成功", data);
+    }
+
+    public RestModel() {
+
     }
 
     public RestModel(int code, String msg, T data) {
         this.code = code;
         this.msg = msg;
         this.data = data;
-    }
-
-    public RestModel(T data) {
-        this(HttpStatus.OK, "查询成功", data);
     }
 
     public int getCode() {

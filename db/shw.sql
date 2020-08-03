@@ -11,7 +11,7 @@
  Target Server Version : 40203
  File Encoding         : 65001
 
- Date: 31/07/2020 18:25:24
+ Date: 03/08/2020 13:58:50
 */
 
 
@@ -59,6 +59,22 @@ db.getCollection("student").insert([ {
     "login_name": "test",
     "login_pwd": "123456",
     name: "张志杰",
+    "clazz_id": "1",
+    _class: "top.itning.server.shwsecurity.entity.Student"
+} ]);
+db.getCollection("student").insert([ {
+    _id: ObjectId("5f27882eb47dc36503641549"),
+    "login_name": "huangguoyong",
+    "login_pwd": "123456",
+    name: "黄国勇",
+    "clazz_id": "2",
+    _class: "top.itning.server.shwsecurity.entity.Student"
+} ]);
+db.getCollection("student").insert([ {
+    _id: ObjectId("5f278ab23d6f744604f43019"),
+    "login_name": "test2",
+    "login_pwd": "123456",
+    name: "test2",
     "clazz_id": "1",
     _class: "top.itning.server.shwsecurity.entity.Student"
 } ]);
