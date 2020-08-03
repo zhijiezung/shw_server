@@ -8,6 +8,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.lang.NonNull;
 import org.springframework.stereotype.Component;
+import org.springframework.util.StringUtils;
 import org.springframework.web.reactive.function.BodyInserters;
 import org.springframework.web.reactive.function.server.ServerRequest;
 import org.springframework.web.reactive.function.server.ServerResponse;
@@ -89,15 +90,22 @@ public class JwtHandler {
                     return Mono.justOrEmpty(b);
                 })
                 .switchIfEmpty(Mono.error(new NullFiledException("注册信息不能为空", HttpStatus.BAD_REQUEST)))
-                .flatMap(form -> studentRepository
-                        //.existsById(form.getLoginName())
-                        .existsByLoginName(form.getLoginName())
+                .flatMap(form -> {
+                    if (StringUtils.isEmpty(form.getLoginName()) || StringUtils.isEmpty(form.getLoginPwd())) {
+                        return Mono.error(new BizException("注册信息不完整", HttpStatus.BAD_REQUEST));
+                    } else {
+                        return Mono.just(form);
+                    }
+                })
+                .flatMap(stu -> studentRepository
+                        //.existsById(stu.getNo())
+                        .existsByLoginName(stu.getLoginName())
                         .flatMap(bool -> {
                             if (bool) {
                                 return Mono.error(new BizException("用户已经存在", HttpStatus.FORBIDDEN));
                             } else {
-                                form.setNo(null);
-                                return created(studentRepository.save(form), "注册成功");
+                                stu.setNo(null);
+                                return created(studentRepository.save(stu), "注册成功");
                             }
                         })
                 );

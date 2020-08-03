@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="21ae2cd2-8f0f-4b70-9197-5011a58b747e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/shw-common/src/main/java/top/itning/server/common/exception/BizException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shw-common/src/main/java/top/itning/server/common/exception/BaseException.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-common/src/main/java/top/itning/server/common/exception/BaseException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shw-common/src/main/java/top/itning/server/common/exception/RoleException.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-common/src/main/java/top/itning/server/common/exception/RoleException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shw-common/src/main/java/top/itning/server/common/model/RestModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-common/src/main/java/top/itning/server/common/model/RestModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shw-security/src/main/java/top/itning/server/shwsecurity/handler/JwtHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-security/src/main/java/top/itning/server/shwsecurity/handler/JwtHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shw-security/src/main/java/top/itning/server/shwsecurity/repository/StudentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/shw-security/src/main/java/top/itning/server/shwsecurity/repository/StudentRepository.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -553,7 +548,7 @@
       <workItem from="1595809190165" duration="7825000" />
       <workItem from="1595896325344" duration="21696000" />
       <workItem from="1595984341552" duration="5539000" />
-      <workItem from="1596069012198" duration="65996000" />
+      <workItem from="1596069012198" duration="66565000" />
     </task>
     <task id="LOCAL-00001" summary="docker 配置">
       <created>1594795026247</created>
@@ -632,7 +627,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596191149233</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="注册student账号 - 已存在返回403">
+      <created>1596426346586</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1596426346586</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -665,6 +667,7 @@
     <MESSAGE value="zuul -&gt; 安全中心 -&gt; 验证jwt" />
     <MESSAGE value="mark" />
     <MESSAGE value="注册student账号 - 注册信息：Student{no='1', loginName='test', loginPwd='123456', name='张志杰', clazzId='1'}" />
-    <option name="LAST_COMMIT_MESSAGE" value="注册student账号 - 注册信息：Student{no='1', loginName='test', loginPwd='123456', name='张志杰', clazzId='1'}" />
+    <MESSAGE value="注册student账号 - 已存在返回403" />
+    <option name="LAST_COMMIT_MESSAGE" value="注册student账号 - 已存在返回403" />
   </component>
 </project>
