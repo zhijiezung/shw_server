@@ -85,7 +85,9 @@ public class RestModel<T> implements Serializable {
      * @return {@link ServerResponse}
      */
     public static <T> Mono<ServerResponse> created(Mono<T> data, String msg) {
-        return ServerResponse.status(HttpStatus.CREATED).body(toMono(HttpStatus.CREATED, msg, data), RestModel.class);
+        return ServerResponse
+                .status(HttpStatus.CREATED)  // 201
+                .body(toMono(HttpStatus.CREATED, msg, data), RestModel.class);
     }
 
     /**

@@ -3,10 +3,10 @@ package top.itning.server.common.exception;
 import org.springframework.http.HttpStatus;
 
 /**
- * 用户角色异常
+ * 业务异常
  */
-public class RoleException extends BaseException {
-    public RoleException(String msg, HttpStatus code) {
+public class BizException extends BaseException {
+    public BizException(String msg, HttpStatus code) {
         super(msg, code);
     }
 }

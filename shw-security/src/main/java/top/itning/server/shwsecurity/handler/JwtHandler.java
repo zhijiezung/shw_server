@@ -12,6 +12,7 @@ import org.springframework.web.reactive.function.BodyInserters;
 import org.springframework.web.reactive.function.server.ServerRequest;
 import org.springframework.web.reactive.function.server.ServerResponse;
 import reactor.core.publisher.Mono;
+import top.itning.server.common.exception.BizException;
 import top.itning.server.common.exception.NullFiledException;
 import top.itning.server.shwsecurity.entity.Student;
 import top.itning.server.shwsecurity.repository.StudentRepository;
@@ -72,14 +73,34 @@ public class JwtHandler {
                 .switchIfEmpty(Mono.error(new NullFiledException("注册信息不能为空", HttpStatus.BAD_REQUEST)))
                 .flatMap(s -> created(studentRepository.save(s), "注册成功"));*/
 
-        return request
+        /*return request
                 .bodyToMono(Student.class)  // Content type 'application/json'
-                .flatMap(m -> {
-                    logger.debug("注册信息：{}", m);
-                    return Mono.justOrEmpty(m);
+                .flatMap(b -> {
+                    logger.debug("注册信息：{}", b);
+                    return Mono.justOrEmpty(b);
                 })
                 .switchIfEmpty(Mono.error(new NullFiledException("注册信息不能为空", HttpStatus.BAD_REQUEST)))
-                .flatMap(s -> created(studentRepository.save(s), "注册成功"));
+                .flatMap(s -> created(studentRepository.save(s), "注册成功"));*/  // insert or update
+
+        return request
+                .bodyToMono(Student.class)  // Content type 'application/json'
+                .flatMap(b -> {
+                    logger.debug("注册信息：{}", b);
+                    return Mono.justOrEmpty(b);
+                })
+                .switchIfEmpty(Mono.error(new NullFiledException("注册信息不能为空", HttpStatus.BAD_REQUEST)))
+                .flatMap(form -> studentRepository
+                        //.existsById(form.getLoginName())
+                        .existsByLoginName(form.getLoginName())
+                        .flatMap(bool -> {
+                            if (bool) {
+                                return Mono.error(new BizException("用户已经存在", HttpStatus.FORBIDDEN));
+                            } else {
+                                form.setNo(null);
+                                return created(studentRepository.save(form), "注册成功");
+                            }
+                        })
+                );
     }
 
     @NonNull
